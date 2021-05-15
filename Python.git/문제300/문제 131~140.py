@@ -38,7 +38,7 @@ print("138번")
 for 변수 in 리스트2:
     print(변수)
     print("-------")
-#139번
+#139번.
 print("139번")
 print("++++")
 for 변수 in 리스트2:
