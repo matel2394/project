@@ -79,13 +79,23 @@
 #     print("부산")
 # else:
 #     print("어딘지모름")
-#129번
-print("129번")
-대답12 = input("주민번호:")
-계산1 = int(대답12[0]) *2+ int(대답12[1]) *3+ int(대답12[2]) *4+ int(대답12[3]) *5+int(대답12[4]) *6+ int(대답12[5]) *7+int(대답12[6]) *8+ int(대답12[7]) *9+ int(대답12[8]) *2+int(대답12[9]) *3+int(대답12[10]) *4+int(대답12[11]) *5
-계산2 = 11 - 계산1 % 11
-if 계산2 == 4:
-    print("유효")
-else:
-    print("ㄴㄴ")
+# #129번
+# print("129번")
+# 대답12 = input("주민번호:")
+# 계산1 = int(대답12[0]) *2+ int(대답12[1]) *3+ int(대답12[2]) *4+ int(대답12[3]) *5+int(대답12[4]) *6+ int(대답12[5]) *7+int(대답12[6]) *8+ int(대답12[7]) *9+ int(대답12[8]) *2+int(대답12[9]) *3+int(대답12[10]) *4+int(대답12[11]) *5
+# 계산2 = 11 - 계산1 % 11
+# if 계산2 == 4:
+#     print("유효")
+# else:
+#     print("ㄴㄴ")
 #130번
+import requests
+btc = requests.get("https://api.bithumb.com/public/ticker/").json()['data']
+변동폭 = btc["max_price"] = btc["min_price"]
+시가 = btc["opening_price"]
+최고가 = btc["max_price"]
+
+if (시가+변동폭) > 최고가:
+    print("상승장")
+else:
+    print("하락장")
