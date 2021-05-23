@@ -17,7 +17,7 @@ def func_c(arr): #3단계 함수: 가장 적게 등장하는 수 세기
     INF = 1001
     ret = INF
     for x in arr:
-        if x !=0 and ret > x: #0이 아니면서 가장 작은 수 자연수보다 작으면
+        if x !=0 and ret > x: #0이 아니면서 가장 작은 수 자연수보.다 작으면
             ret =x #해당 자연수가 가장 작은 자연수가 됨
     return ret
 

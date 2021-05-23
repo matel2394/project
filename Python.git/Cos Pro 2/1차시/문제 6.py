@@ -7,7 +7,7 @@ def solution(number):
             if current % 10 == 3 or current % 10 == 6 or current % 10 == 9 : #
                 count += 1 #박수 횟수 올리기
                 print("pair",end = ' ')
-            current = current // 10 #현재 숫자 // 10 자릿수 내리기
+            current = current // 10 #현재 숫자 // 10 자릿수 내리기.
         if temp == count:
             print(i,end=' ')
     print(" ",end= ' ')
