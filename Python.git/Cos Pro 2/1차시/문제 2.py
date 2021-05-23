@@ -19,7 +19,7 @@ print("solution return value of the function is",ret1,".")
 
 price2 = 96900
 grade2 = "S"
-ret2 = solution(price2,grade2) #함수 호출.
+ret2 = solution(price2,grade2) #함수 호출
 
 print("solution return value of the function is",ret2,".")
 

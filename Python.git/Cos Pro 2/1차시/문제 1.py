@@ -19,7 +19,7 @@ def soluthon(shirt_size):  # 함수만들기
     return size_count
 
 shirt_size = ["XS", "S", "L", "L", "XL", "S"]
-ret = soluthon(shirt_size)  # 함수 불러내기.
+ret = soluthon(shirt_size)  # 함수 불러내기
 
 print("solution: return value of the function is", ret, " .")
 

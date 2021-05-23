@@ -19,7 +19,7 @@ def solution(arr):
          #4     #3          #3      #4
         #left +1  right -1
     #left 2일경우 right -2
-       #arr[2] , arr[-2].
+       #arr[2] , arr[-2]
 
 arr = [1,4,2,3]
 ret =solution(arr)

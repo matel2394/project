@@ -26,4 +26,4 @@ print("solution: return value of the function is",ret,".")
 #end month의 func a함수는 2-1이니 for문이 1회반복이고 i=0이 나오니까 토탈에 31이 더해져서 대입되고 밑에있는 total += day에는
 #2가 더해져서 total = 33인데 return에 -1이 있으니 end total = 32
 #솔루션 함수에서 end total - start total이니 31일
-#매개변수 ret에 저장되고 마지막 print함수에 출력.
+#매개변수 ret에 저장되고 마지막 print함수에 출력
