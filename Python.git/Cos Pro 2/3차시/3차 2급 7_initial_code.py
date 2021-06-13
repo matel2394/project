@@ -1,13 +1,13 @@
-def solution(num_apple, num_carrot, k):
-    answer = 0
+def solution(num_apple, num_carrot, k): #주스 몇잔 만들 수 있는지 구하는 함수
+    answer = 0 #주스 갯수
     
-    if num_apple < num_carrot * 3:
-        answer = num_apple // 4
-    else:
-        answer = num_carrot    
+    if num_apple < num_carrot * 3: #carrot에 3곱한것이 apple보다 많다면
+        answer = num_apple // 4 #주스갯수는 apple 수를 4로 나눈것
+    else: #아니면
+        answer = num_carrot #주스 갯수는 당근갯수
 
-    num_apple -= answer * 3
-    num_carrot -= answer
+    num_apple -= answer * 3 #사과 갯수에서 주스 갯수를 뺌
+    num_carrot -= answer # 당근 갯수에서 주스 갯수를 뺌
 
     i = 0
     while k - (num_apple + num_carrot + i) > 0:

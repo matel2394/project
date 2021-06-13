@@ -1,17 +1,17 @@
-def func_a(current_grade, last_grade, rank, max_diff_grade): #파라미터를 밑의 두 리스트와 solution 함수 안에있는 rank,max_diff_grade를 사용하는 함수
+def func_a(current_grade, last_grade, rank, max_diff_grade): #파라미터를 밑의 두 리스트와 solution 함수 안에있는 rank,max_diff_grade를 사용하는 함수 (장학생 수를 카운트하는 함수)
     arr_length = len(current_grade) #arr_length 변수에 current grade의 내용 수를 대입
-    count = 0 #카운트 변수에 0 대입
+    count = 0 #카운트 변수에 0 대입 (장학생 수)
     for i in range(arr_length): #i에 1씩 더하며 6회 반복
-        if current_grade[i] >= 80 and rank[i] <= arr_length // 10: #current grade의 i 값이 80보다 큰지,
+        if current_grade[i] >= 80 and rank[i] <= arr_length // 10: #current grade의 i 값이 80보다 크고 전체 학생수의 10% 이내라면
             count += 1 #그렇다면 count 변수에 1 더하기
-        elif current_grade[i] >= 80 and rank[i] == 1: #current grade의 i 값이 80보다 큰지,
+        elif current_grade[i] >= 80 and rank[i] == 1: #current grade의 i 값이 80보다 크고 순위가 1등인 경우
             count += 1 #그렇다면 count 변수에 1 더하기
         elif max_diff_grade > 0 and max_diff_grade == current_grade[i] - last_grade[i]:
             # max_diff_grade가 0보다 크고 current grade의 i 번째에서 last grade의 i값을 뺀것과 같다면
             count += 1 #그렇다면 count 변수에 1 더하기
-    return count #count 변수를 리턴시킴
+    return count #(장학생)count 변수를 리턴시킴
 
-def func_b(current_grade): #current grade 리스트를 파라미터로 쓰는 func_b 함수
+def func_b(current_grade): #current grade 리스트를 파라미터로 쓰는 func_b 함수 (이번 학기 성적을 기준으로 학생별 석차를 구하는 함수)
     arr_length = len(current_grade) #arr_length 변수에 current grade의 내용 수를 대입
     rank = [1] * arr_length #rank는 1이 들어가있는 리스트고 거기에 arr_length(6)을 곱함
     for i in range(arr_length): #i에 1씩 더하며 6회 반복
@@ -20,9 +20,9 @@ def func_b(current_grade): #current grade 리스트를 파라미터로 쓰는 fu
                 rank[i] += 1 #rank의 i번째 인덱스에 1 더하기
     return rank #rank 리스트 리턴하기
 
-def func_c(current_grade, last_grade): #파라미터를 밑의 두 리스트를 사용하는 함수
+def func_c(current_grade, last_grade): #파라미터를 밑의 두 리스트를 사용하는 함수 (각 학생의 이번학기-직전 학기 성적을 뺀 값중 최댓값을 구하는 함수)
     max_diff_grade = 1 #max diff grade 변수에 1 대입
-    for i in range(len(current_grade)): #6회 반복
+    for i in range(len(current_grade)): #6회 반복 #이번학기 성적을 i에 대입하면서 반복
         max_diff_grade = max(max_diff_grade, current_grade[i] - last_grade[i])
         # max diff grade 변수에 max diff grade와,current grade의 i번째 인덱스 - last grade의 i번째 인덱스의 경우의 수중 가장 큰 수를 max diff grade에 대입
     return max_diff_grade #max diff grade를 리턴

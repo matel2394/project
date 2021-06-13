@@ -1,4 +1,4 @@
-def solution(member_age, transportation): #member age와 transportation을 파라미터로 하는 sloution 함수 디파일
+def solution(member_age, transportation): #member age와 transportation을 파라미터로 하는 sloution 함수 디파일 (타고가는 수단에 따른 요금과 총 요금 구하는 함수)
 	if transportation == 'Bus': #만약 transportation이 버스라면
 		adult_expense = 40000 #어른요금 40000
 		child_expense = 15000 #아이요금 15000
@@ -9,13 +9,13 @@ def solution(member_age, transportation): #member age와 transportation을 파�
 		adult_expense = 70000 #어른요금 70000
 		child_expense = 45000 #아이요금 45000
 
-	if len(member_age) >= 10:
-		adult_expense = adult_expense * 90/100 #어른요금에 0.9 곱하기
-		child_expense = child_expense * 80/100 #아이요금에 0.9 곱하기
+	if len(member_age) >= 10: #인원 구하기
+		adult_expense = adult_expense * 90/100 #어른요금에 0.9 곱하기 (할인 받으면 얼만지 구하기)
+		child_expense = child_expense * 80/100 #아이요금에 0.9 곱하기 (할인 받으면 얼만지 구하기)
 
-	total_expenses = 0 #total_expenses 변수에 0 대입
+	total_expenses = 0 #total_expenses 변수에 0 대입 (최종 합계 가격 변수)
 	for age in member_age: #age 변수에 member_age 의 항목을 대입하며 반복
-		if age>=20: #만약 age 변수가 20보다 크거나 같다면
+		if age>=20: #만약 age 변수가 20보다 크거나 같다면 (나이에 따른 어른,어린이 구하기)
 			total_expenses += adult_expense # total 가격에 어른요금만큼 더하기
 		else: #아니면
 			total_expenses += child_expense #아이 요금만큼 더하기
