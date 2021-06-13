@@ -17,3 +17,7 @@ ret = solution(words, word)
 
 #[실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
 print("solution 함수의 반환 값은", ret, "입니다.")
+
+#수정 후:solution 함수의 반환 값은 5 입니다.
+
+#문제에서 구하고자하는 것 : words 리스트에 있는 내용을 word 변수의 단어와 같게 만들려고할때 words에서 바꿔야하는 단어는 몇개인지 구하기

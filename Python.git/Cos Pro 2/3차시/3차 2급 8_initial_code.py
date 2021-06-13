@@ -19,3 +19,7 @@ ret = solution(programs)
 print("solution 함수의 반환 값은", ret, "입니다.")
 
 #수정 전 : solution 함수의 반환 값은 7 입니다.
+
+#수정 후 :solution 함수의 반환 값은 4 입니다.
+
+#문제에서 원하는 내용 : A씨가 Tv를 2대 틀어놓는 시간 구하기

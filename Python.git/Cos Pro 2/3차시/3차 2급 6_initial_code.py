@@ -20,3 +20,10 @@ ret2 = solution(tile_length2)
 
 #[실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
 print("solution 함수의 반환 값은 ", ret2, " 입니다.")
+
+# 수정 전: ???
+
+#수정 후 : solution 함수의 반환 값은  RRRGGBRRRGG  입니다.
+#solution 함수의 반환 값은  -1  입니다.
+
+#문제에서 원하는 내용:타일을 색칠한 순서를 구하기 (안되면 -1로)

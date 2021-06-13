@@ -37,3 +37,10 @@ ret2 = solution(member_age2, transportation2)
 
 #[실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
 print("solution 함수의 반환 값은", ret2, "입니다.")
+
+#수정 전 : ???
+
+#수정 후:solution 함수의 반환 값은 150000 입니다.
+#solution 함수의 반환 값은 203600.0 입니다.
+
+#문제에서 원하는 내용: 인원의 수와 나이에 따른 총 가격 구하기

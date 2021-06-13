@@ -10,7 +10,7 @@ def func_b(arr): #파라미터를 arr(scores)로 사용
     arr.sort(reverse=True) #socres 리스트를 내림차순 정렬해주는 함수
 
 def func_c(arr, n): #파라미터를 arr(scores)와 n을 사용
-    return arr[n] #scores의 3(n)번째 수를 리턴함
+    return arr[n] #scores의 n번째 수를 리턴함
 
 def solution(scores, n): #scores와 n울 파라미터로 사용하는 함수
     score = func_c(scores,n) #스코어 변수에 scores의 3번째 수를 리턴하는 func_c함수를 scores와 n 파라미터로 호출해 대입함
