@@ -25,5 +25,5 @@ ret = solution(mid_scores, final_scores)
 print("solution 함수의 반환 값은", ret, "입니다.")
 
 #수정 전 :solution 함수의 반환 값은 [30, -30] 입니다.
-#수정 후 :
+#수정 후 :solution 함수의 반환 값은 [30, -10] 입니다.
 #문제에서 구하려고 하는 것:성적이 가장 많이 오른 학생과 가장 떨어진 학생의 기말과 중간 성적차이

@@ -9,25 +9,25 @@ def func_b(score1, score2): #획득한 점수가 큰 사람과 점수를 리스�
     else: #무승부라면
         return [0, score1] #0을 리턴
 
-def func_c(bundle): #A와 B가 획득한 점수를 구하는 함수
+def func_c(bundle): #카드의 점수 구하기
     answer = 0 #점수 카운트
-    score_per_cards = {
+    score_per_cards = { #딕셔너리
         'a': 1,
         'b': 2,
         'c': 3,
         'd': 4,
         'e': 5
-    }
+    } #딕셔너리 (a는 1점 b는 2점 c는 3점  . . .
     for card in bundle: #변수에 bundle 변수의 항목들을 넣으며 반복
-        answer += score_per_cards[card] #card 인덱스가 c면 3점을 추가하는 식으로 answer에 점수를 추가함
+        answer += score_per_cards[card] #카드를 넣어서 점수를 저장
     return answer #answer 리턴
         
 def solution(n, bundle): #이긴사람과 점수를 구하는 함수
-    a_cards = func_a(bundle,start=1)[:n]
-    b_cards = func_a(bundle,start=2)[:n]
+    a_cards = func_a(bundle,0)[:n]
+    b_cards = func_a(bundle,1)[:n]
     a_score = func_c(a_cards)
     b_score = func_c(b_cards)
-    return func_b(score1=a_score, score2=b_score)
+    return func_b(a_score, b_score)
 
 #아래는 테스트케이스 출력을 해보기 위한 코드입니다.
 n = 4
