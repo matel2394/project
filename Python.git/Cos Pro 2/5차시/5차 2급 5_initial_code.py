@@ -1,8 +1,8 @@
-def solution(a, b):
+def solution(a, b): #장이 동시에 열리는 날의 최소공배수
     answer = 0
     for i in range(1, b + 1): #7번 반복
-        if (a * i) % b == 0: #
-            answer = b * (i-1)
+        if (a * i) % b == 0: #만약 (a가 4일때) a에 1~b+1까지의 값을 곱하고 그것을 b로 나눴을때 0이라면
+            answer = b * (i-1) #(이 문제 기준) 6*(3-1)=12=answer로 최소공배수를 구한다
             break
     return answer
 
@@ -13,3 +13,9 @@ ret = solution(a, b)
 
 #[실행] 버튼을 누르면 출력 값을 볼 수 있습니다.
 print("solution 함수의 반환 값은", ret, "입니다.")
+
+#수정 전:solution 함수의 반환 값은 18 입니다.
+
+#수정 후:solution 함수의 반환 값은 12 입니다.
+
+#문제에서 원하는 내용:4일장과 6일장이 같이 열리는날은 며칠에 한번 있는지 구하기
