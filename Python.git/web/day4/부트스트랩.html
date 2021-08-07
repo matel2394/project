@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+
+
+
+<!--  스타일-->
+  <style>
+    @font-face {
+    font-family: 'EliceDigitalBaeum_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+ *{
+            font-family: 'EliceDigitalBaeum_Bold';
+        }
+        /* 캐러셀 버튼의 그라데이션 없애기 */
+
+        .carousel-control{background : none !important;}
+  </style>
+</head>
+<body>
+
+<!--상단 로고
+    div : 상자 모델 [구역만들기]
+      align = "center" 페이지에서 가운데 정렬
+      class = "container"
+      calss = "nav navbar-nav" 미리 만들어진 메뉴
+      class = "navbar-right" 메뉴를 오른쪽으로 배치
+      -->
+  <div align="center">
+    <a href="부트스트랩.html"> <img src="다운로드.png" width="200px;"></a>
+  </div>
+<!--상단 메뉴-->
+  <div class="container">
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+    </ul>
+  </div>
+<!--메인 메뉴-->
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only"> toggle</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <div id="navbar" class="navbar-collapse collapse"> <!--화면이 작아지면 없애기-->
+<!--        왼쪽 메뉴-->
+        <ul class="nav navbar-nav">
+          <li><a href="#">스페셜 할인팩</a></li>
+          <li><a href="#">프리미엄</a></li>
+          <li><a href="#">와퍼</a></li>
+          <li><a href="#">주니어&버거</a></li>
+          <li><a href="#">사이드</a></li>
+          <li><a href="#">음료/디저트</a></li>
+        </ul>
+        <!-- 오른쪽 메뉴-->
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">매장찾기</a> </li>
+          <li><a href="#">이벤트</a> </li>
+          <li><a href="#">딜리버리 주문</a> </li>
+
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<!--이미지 슬라이드 [캐러셀]-->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
+      <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-sile-to = "0" class="active"></li>
+          <li data-target="#myCarousel" data-sile-to = "1"></li>
+          <li data-target="#myCarousel" data-sile-to = "2"></li>
+          <li data-target="#myCarousel" data-sile-to = "3"></li>
+          <li data-target="#myCarousel" data-sile-to = "4"></li>
+      </ol>
+<!--        사진넣기-->
+      <div class="carousel-inner">
+          <div class="item active">
+              <img src="1.png"  class="img-responsive center-block">
+          </div>
+          <div class="item">
+              <img src="2.png"  class="img-responsive center-block">
+          </div>
+          <div class="item">
+              <img src="3.png"  class="img-responsive center-block">
+          </div>
+          <div class="item">
+              <img src="4.png" class="img-responsive center-block">
+          </div>
+          <div class="item">
+              <img src="5.png" class="img-responsive center-block">
+          </div>
+
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+               <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+      </div>
+  </div>
+<div align="center">
+      <iframe width="1440px;" height="604" src="https://www.youtube.com/embed/MbqUVZcpIac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+<br><br>
+    <!--메뉴 탭 -->
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#스페셜할인팩" >스페셜할인팩</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#프리미엄">프리미엄</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#와퍼">와퍼</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#주니어버거">주니어버거</a>
+            </li>
+        </ul>
+
+
+
+        <div class="tab-content">
+            <div class="tab-pane fade" id="스페셜할인팩">
+                <div>
+                    <br>
+                    <table>
+
+                        <tr>
+                            <td><img src="7.png"></td>
+                            <td><img src="8.png"></td>
+                            <td><img src="9.png"></td>
+                        </tr>
+
+                        <tr style="font-size:35px; text-align:center">
+                            <td>몬스터팩1</td>
+                            <td>몬스터팩2</td>
+                            <td>몬스터팩3</td>
+                        </tr>
+
+                        <tr style="font-size:15px; text-align:center">
+                            <td>몬스터Ⅱ통새우+몬스터Ⅱ+<br> 프렌치프라이L+너겟킹4조각+콜라R2</td>
+                            <td>몬스터Ⅱ+몬스터와퍼+<br> 프렌치프라이L+너겟킹4조각+콜라R2</td>
+                            <td>몬스터Ⅱ통새우+콰트로치즈와퍼+<br> 프렌치프라이L+너겟킹4조각+콜라R2</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="프리미엄">
+                <div>
+                    <br>
+                    <table>
+
+                        <tr>
+                            <td><img src="11.png" width="300px;"></td>
+                            <td><img src="12.png" width="300px;"></td>
+                            <td><img src="14.png" width="300px;"></td>
+                            <td><img src="13.png" width="300px;"></td>
+                        </tr>
+
+                        <tr style="font-size:35px; text-align:center">
+                            <td>몬스터팩1</td>
+                            <td>몬스터팩2</td>
+                            <td>몬스터팩3</td>
+                            <td>몬스터팩4</td>
+                        </tr>
+
+                        <tr style="font-size:15px; text-align:center">
+                            <td>몬스터Ⅱ+프렌치프라이R+콜라R</td>
+                            <td>몬스터Ⅱ통새우+프렌치프라이R+콜라R</td>
+                            <td>몬스터X+프렌치프라이R+콜라R</td>
+                            <td>통새우X+프렌치프라이R+콜라R</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="tab-pane fade show active" id="와퍼">
+                <div>와퍼 메뉴 목록</div>
+            </div>
+            <div class="tab-pane fade show active" id="주니어버거">
+                <div>주니어버거 메뉴 목록</div>
+            </div>
+
+        </div>
+    </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<!--제이쿼리-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<!--  주석
+    html : 웹문서-->
+</body>
+</html>

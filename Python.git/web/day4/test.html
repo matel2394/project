@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script>
+
+  $(document).ready(function(){
+
+	$('#top_menu .sub_1').hide();
+
+	$('.menu_1').mouseover(function(){
+		$('.sub_1').slideDown();
+
+	});
+	$('.menu_1').mouseleave(function(){
+		$('.sub_1').hide();
+	});
+});
+
+</script>
+</head>
+<body>
+<ul id="top_menu">
+	<li>
+		<h3 class="menu_1">과일</h3>
+		<ul class="sub_1">
+			<li>사과</li>
+			<li>배</li>
+		</ul>
+	</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+
+
+
+  <style>
+    @font-face {
+    font-family: 'EliceDigitalBaeum_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+ *{
+            font-family: 'EliceDigitalBaeum_Bold';
+        }
+
+        .carousel-control{background : none !important;}
+  </style>
+</head>
+<body>
+
+
+  <div align="center">
+    <img src="로고1.png" width="200px;">
+  </div>
+
+  <div class="container">
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">MyCGV</a></li>
+        <li><a href="#">VIP LOUNGE</a></li>
+        <li><a href="#">Club 서비스</a></li>
+        <li><a href="#">고객센터</a></li>
+        <li><a href="#">ENGLISH TICKETING</a></li>
+
+    </ul>
+  </div>
+<!--메인 메뉴-->
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only"> toggle</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <div id="navbar" class="navbar-collapse collapse">
+
+        <ul class="nav navbar-nav">
+          <li><a href="#">영화</a></li>
+          <li><a href="#">예매</a></li>
+          <li><a href="#">극장</a></li>
+          <li><a href="#">이벤트&컬쳐</a></li>
+        </ul>
+
+
+      </div>
+    </div>
+  </nav>
+
+<!--이미지 슬라이드 [캐러셀]-->
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="1500">
+      <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-sile-to = "0" class="active"></li>
+          <li data-target="#myCarousel" data-sile-to = "1"></li>
+          <li data-target="#myCarousel" data-sile-to = "2"></li>
+          <li data-target="#myCarousel" data-sile-to = "3"></li>
+          <li data-target="#myCarousel" data-sile-to = "4"></li>
+      </ol>
+<!--        사진넣기-->
+      <div class="carousel-inner">
+          <div class="item active">
+              <img src="1.jpg"  class="img-responsive center-block">
+          </div>
+          <div class="item">
+              <img src="2.jpg"  class="img-responsive center-block">
+          </div>
+          <div class="item">
+              <img src="3.jpg"  class="img-responsive center-block">
+          </div>
+          <div class="item">
+              <img src="4.jpg" class="img-responsive center-block">
+          </div>
+          <div class="item">
+              <img src="5.jpg" class="img-responsive center-block">
+          </div>
+
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next">
+               <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+      </div>
+  </div>
+    <div align="center">
+  <h3>MOVIE SELETION</h3>
+        </div>
+<div align="center">
+<video controls autoplay="autoplay" width="700" height="400">
+        <source src="영상1.mp4">
+</video>
+</div>
+<br><br>
+    <div class="container">
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#영화">영화</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#예매">예매</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#극장">극장</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#이벤트,컬쳐">이벤트,컬쳐</a>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane fade" id="영화">
+                 <div>
+                    <br>
+                    <table>
+
+                        <tr>
+                            <td><img src="7.jpg"></td>
+                            <td><img src="8.jpg"></td>
+                            <td><img src="9.jpg"></td>
+                        </tr>
+
+                        <tr style="font-size:35px; text-align:center">
+                            <td>무비차트</td>
+                            <td>HD트레일러</td>
+                            <td>ㅁ</td>
+                        </tr>
+            </div>
+        </div>
+    </div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</body>
+</html>
