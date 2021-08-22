@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+          <style>
+    @font-face {
+    font-family: 'EliceDigitalBaeum_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+ *{
+            font-family: 'EliceDigitalBaeum_Bold';
+        }
+        /* 캐러셀 버튼의 그라데이션 없애기 */
+
+        .carousel-control{background : none !important;}
+
+  </style>
+</head>
+<body style="background-color:black;">
+{% include "header.html" %}
+{% load static %}
+    <div class="container">
+        <div class="col-lg-3" style="color:white">
+            <a href="index"><img src="{%static '3.png' %}" width="150px"></a>
+        </div>
+        <div class="col-lg-5" style="color:white">
+            <table style="margin-top:30px; border-spacing : 10px; font-size : 18px">
+                <tr>
+                    <td width="150">고객센터</td>
+                    <td width="150">000-0000-0000</td>
+                </tr>
+                <tr>
+                    <td>이메일</td>
+                    <td>qweqwe@naver.com</td>
+                </tr>
+                <tr>
+                    <td>홈페이지 소개</td>
+                    <td>제품 소개</td>
+                </tr>
+                <tr>
+                    <td>찾아 오시는 길</td>
+                    <td> 대표자 :MelOn</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-lg-4" style="color:white">
+            <table style="margin-top:50px; border-spacing:10px;">
+                <tr>
+                    <td style="padding:10px"> <img src="{% static '인스타그램1.png' %}" width="50px"></td>
+                     <td style="padding:10px"> <img src="{% static '트위터1.png' %}" width="50px"></td>
+                     <td style="padding:10px"> <img src="{% static '카카오톡.png' %}" width="50px"></td>
+                     <td style="padding:10px"> <img src="{% static '페이스북.png' %}" width="50px"></td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+</html>

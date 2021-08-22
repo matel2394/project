@@ -3,8 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <!-- 합쳐지고 최소화된 최신 CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+<!-- 부가적인 테마 -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+
+
+
+<!--  스타일-->
+  <style>
+    @font-face {
+    font-family: 'EliceDigitalBaeum_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+ *{
+            font-family: 'EliceDigitalBaeum_Bold';
+        }
+        /* 캐러셀 버튼의 그라데이션 없애기 */
+
+        .carousel-control{background : none !important;}
+  </style>
+
+
 </head>
 <body>
-ㅁㄴㅇㄹ
+{% include "header.html" %}
+  {% load static %}
+
+  <div>
+      <img src="{% static 'intro3.png' %}" style="display: block; margin: 10px  300px -50px 300px" width="200px" >
+      <input type="text" size="30" style="display: block; margin: -70px  900px -20px 500px">
+      <img src="{% static '2.png' %}" style="display: block; margin: -45px  900px -30px 500px" width="300px">
+  </div>
+<!--상단 메뉴-->
+  <div class="container">
+    <ul class="nav navbar-nav navbar-right">
+        <li><a href="login">로그인</a></li>
+        <li><a href="signup">회원가입</a></li>
+    </ul>
+  </div>
+<!--메인 메뉴-->
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only"> toggle</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+      <div id="navbar" class="navbar-collapse collapse"> <!--화면이 작아지면 없애기-->
+<!--        왼쪽 메뉴-->
+        <ul class="nav navbar-nav" style="display: block; margin: auto  auto auto -100px">
+          <li><a href="#">차트</a></li>
+          <li><a href="#">최근</a></li>
+          <li><a href="#">장르</a></li>
+          <li><a href="#">어워드</a></li>
+          <li><a href="#">아티스트</a></li>
+          <li><a href="#">의견 게시판</a></li>
+          <li><a href="footer">실시간 음악 스트리밍 서비스 멜론이란?</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="login">마이뮤직</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 </body>
 </html>
