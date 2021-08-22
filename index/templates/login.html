@@ -5,8 +5,21 @@
     <title>Title</title>
 </head>
 <body>
+{% load static %}
 <div class="container">
-    <input type="text" class="form-control">
+    <div align="center">
+        <img src="{% static 'intro3.png' %}">
+        <div align="center">
+        <input type="text" name="id" id="id" value placeholder="아이디 입력"  style="width:366px; line-height:50px;" >
+            <br>
+        <input type="password" name="pwd" id="pwd" value placeholder="비밀번호 입력"  style="width:366px; line-height:50px;" >
+            </div>
+        <br><br><br>
+        <a href="index"><button type="button" title="로그인" style="width:380px; line-height:50px; background-color:#00CD3C"> 로그인 </button></a>
+    </div>
+    <div>
+    <input type="checkbox">
+        </div>
 </div>
 </body>
 </html>
