@@ -3,23 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+      <style>
+    @font-face {
+    font-family: 'EliceDigitalBaeum_Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+ *{
+            font-family: 'EliceDigitalBaeum_Bold';
+        }
+        /* 캐러셀 버튼의 그라데이션 없애기 */
+
+        .carousel-control{background : none !important;}
+  </style>
 </head>
 <body>
 {% load static %}
-<div class="container">
-    <div align="center">
-        <img src="{% static 'intro3.png' %}">
-        <div align="center">
-        <input type="text" name="id" id="id" value placeholder="아이디 입력"  style="width:366px; line-height:50px;" >
-            <br>
-        <input type="password" name="pwd" id="pwd" value placeholder="비밀번호 입력"  style="width:366px; line-height:50px;" >
-            </div>
-        <br><br><br>
-        <a href="index"><button type="button" title="로그인" style="width:380px; line-height:50px; background-color:#00CD3C"> 로그인 </button></a>
-    </div>
-    <div>
-    <input type="checkbox">
+<!--<div class="container">-->
+<!--    <div align="center">-->
+<!--        <img src="{% static 'intro3.png' %}">-->
+<!--        <div align="center">-->
+<!--        <input type="text" name="id" id="id" value placeholder="아이디 입력"  style="width:366px; line-height:50px;" >-->
+<!--            <br>-->
+<!--        <input type="password" name="pwd" id="pwd" value placeholder="비밀번호 입력"  style="width:366px; line-height:50px;" >-->
+<!--            </div>-->
+<!--        <br><br><br>-->
+<!--        <a href="index"><button type="button" title="로그인" style="width:380px; line-height:50px; background-color:#00CD3C"> 로그인 </button></a>-->
+<!--    </div>-->
+<!--    <div>-->
+<!--    <input type="checkbox">-->
+<!--        </div>-->
+<!--</div>-->
+
+<section class="login-form">
+    <h1>LOGO DESIGN</h1>
+    <form action="">
+        <div class="int-area">
+            <input type="text" name="id" id="id"
+            autocomplete="off" required>
+            <label for="id">USER NAME</label>
         </div>
-</div>
+        <div class="int-area">
+            <input type="password" name="pw" id="pw"
+            autocomplete="on" required>
+            <label for="pw">PASSWORD</label>
+        </div>
+        <div class="btn-area">
+            <button type="submit">LOGIN</button>
+        </div>
+    </form>
+    <div class="caption">
+        <a href="#">비밀번호를 잊었나요?</a>
+    </div>
+</section>
 </body>
 </html>
