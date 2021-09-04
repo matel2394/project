@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style2.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+     crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+    <section class="login-form">
+        <h1><a href="index"> TUT SIGN</a></h1>
+        <form action="http://127.0.0.1:8000/index?id=asdasd&pw=asd">
+            <div class="int-area">
+                <input type="text" name="id" id="id1"
+                autocomplete="off" required>
+                <label for="id1">성</label>
+            </div>
+            <div class="int-area">
+                <input type="text" name="id" id="id2"
+                autocomplete="off" required>
+                <label for="id2">이름</label>
+            </div>
+            <div class="int-area">
+                <input type="email" name="id" id="em"
+                autocomplete="off" required>
+                <label for="em">e-mail</label>
+            </div>
+            <div class="int-area">
+                <input type="password" name="pw" id="pw"
+                autocomplete="off" required>
+                <label>비밀번호</label>
+            </div>
+            <div class="int-area">
+                <input type="password" name="pw" id="pw2"
+                autocomplete="off" required>
+                <label>비밀번호 확인</label>
+            </div>
+            <div class="caption" style="font-color:white">
+                <input type="checkbox" required><a href="약관"> 약관에 동의합니다</a>
+                </div>
+            <div class="btn-area">
+                <a href="index"><button type="submit">SIGN UP</button></a>
+            </div>
+        </form>
+        <div class="caption">
+            <a href="고객센터">문제가 발생했나요?</a>
+        </div>
+    </section>
+</body>
+
+</html>
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--    {% load static %}-->
+<!--    <link rel="stylesheet" href="{% static 'style2.css' %}">-->
+<!--    <script src="https://code.jquery.com/jquery-3.6.0.min.js"-->
+<!--    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="-->
+<!--     crossorigin="anonymous"></script>-->
+<!--    <style>-->
+<!--    @font-face {-->
+<!--    font-family: 'EliceDigitalBaeum_Bold';-->
+<!--    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');-->
+<!--    font-weight: normal;-->
+<!--    font-style: normal;-->
+<!--}-->
+<!-- *{-->
+<!--            font-family: 'EliceDigitalBaeum_Bold';-->
+<!--        }-->
+<!--        /* 캐러셀 버튼의 그라데이션 없애기 */-->
+
+<!--        .carousel-control{background : none !important;}-->
+<!--  </style>-->
+<!--</head>-->
+<!--<body>-->
+
+
+<!--<div class="xkfVF">-->
+<!--    <div align="center" >-->
+<!--        <section class="login-form">-->
+<!--            <div style="padding: 140px 30px 0px 0px" >-->
+<!--                <h1><a href="index"> TUT Sign Up</a></h1>-->
+<!--            </div>-->
+<!--            <form action="http://127.0.0.1:8000/index">-->
+<!--                <div class="int-area" style="padding :50px; margin:0px 150px 0px 100px"  >-->
+<!--                    <input type="text" name="id" id="id"-->
+<!--                           autocomplete="off" required placeholder="성">-->
+<!--                    <input type="text" name="idd" id="idd"-->
+<!--                           autocomplete="on" required placeholder="이름">-->
+
+<!--                </div>-->
+<!--                <div class="int-area" style="margin: 0px -70px 10px -120px;">-->
+<!--                    <input type="email" name="em" id="em" style="padding:20px 150px auto 300; width:300px;height:20px;"-->
+<!--                           autocomplete="on" required placeholder="E-mail">-->
+<!--                </div>-->
+
+
+<!--                <div class="text-area" style="margin: 0px 130px 10px -100px;">-->
+<!--                    <div class="int-area" style="padding :50px; margin:0px 10px 0px 190px"  >-->
+<!--                        <input type="PASSWORD" name="pw" id="pw"-->
+<!--                               autocomplete="off" required placeholder="패스워드">-->
+<!--                        <input type="PASSWORD" name="pwc" id="pwc"-->
+<!--                               autocomplete="off" required placeholder="패스워드 확인">-->
+<!--                    </div>-->
+
+
+<!--                </div>-->
+<!--                <div class="caption">-->
+<!--                <input type="checkbox" required><a href="약관"> 약관</a>에 동의합니다-->
+<!--                </div>-->
+<!--               <div class="btn-area">-->
+<!--                <a href="index"><button type="submit">SIGN UP</button></a>-->
+<!--            </div>-->
+<!--                <div style="margin:0px 0px 0px; padding:0px 0px 0px 0px" >-->
+
+<!--                </div>-->
+
+
+<!--            </form>-->
+<!--        </section>-->
+<!--        &lt;!&ndash;    <img src="{% static '5.jpg'%}" width="200px" style="padding: 0px 300px 100px 600px; margin:-150px">&ndash;&gt;-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--</body>-->
+<!--</html>-->

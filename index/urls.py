@@ -5,4 +5,11 @@ urlpatterns = [
     path('footer',views.footer),
 path('login',views.login),
 path('signup',views.signup),
+path('comu',views.comu),
+path('약관',views.약관),
+path('고객센터',views.고객센터),
+path('write',views.write),
+path('tetrible',views.tetrible),
+path('write1',views.write1),
+
     ]

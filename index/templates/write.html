@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        {% include "header.html" %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style7.css' %}">
+    <link rel="stylesheet" href="C:\Users\skywa\Desktop\VSc\css">
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+</head>
+<body style="background-color:#000000;">
+<div style="color:white" >
+    <h3 > 게시물 올리기</h3>
+    <input class="input_field" type="text" placeholder="이름" required><br>
+    <input class="input_field" type="password" placeholder="글 비밀번호" required><br>
+    <input class="input_field" type="text" placeholder="제목을 입력해주세요." required><br>
+    <textarea class="textarea_field" placeholder="내용을 입력해주세요." required></textarea><br>
+    <a class="btn btn-default pull-left" href="comu" >작성</a>
+</div>
+</body>
+</html>
