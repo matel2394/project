@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    {% include "header.html" %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style3.css' %}">
+    <link rel="stylesheet" href="C:\Users\skywa\Desktop\VSc\css">
+    <!-- 합쳐지고 최소화된 최신 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+
+
+
+    <!--  스타일-->
+    <style>
+        @font-face {
+            font-family: 'EliceDigitalBaeum_Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            font-family: 'EliceDigitalBaeum_Bold';
+        }
+
+        /* 캐러셀 버튼의 그라데이션 없애기 */
+
+        .carousel-control {
+            background: none !important;
+        }
+
+    </style>
+
+
+</head>
+
+<body style="background-color:black;">
+
+
+    <div>
+    <img src="{% static '7.jpg' %}" style="display: block; margin: 10px  300px 20px 300px" width="150px">
+        </div>
+    <div class="se-area">
+        <input type="text" id="se" name="se" placeholder="검색어 입력" style="width:348px; height:38px;" >
+        <button class="seb">검색</button>
+</div>
+<!--상단 메뉴-->
+<div class="container">
+    <ul class="nav navbar-white navbar-right">
+        <li><a href="login" style="margin:0px 0px 0px 900px; padding:0px; color:white" id="id" >로그인</a></li>
+        <li><a href="signup" style="margin:0px 0px 0px 900px; padding:0px;   color:white" id="su">회원가입</a></li>
+    </ul>
+</div>
+
+
+<nav class="navbar navbar-default" style="font-color:text-black">
+    <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only"> toggle</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <div id="navbar " class="navbar-collapse collapse">
+            <!--화면이 작아지면 없애기-->
+            <!--        왼쪽 메뉴-->
+            <ul class="nav navbar-nav" style="display: block; margin: auto  auto auto -100px">
+                <li><a href="#">점유율 순위</a></li>
+                <li><a href="#">신작게임</a></li>
+                <li><a href="#">인디게임</a></li>
+                <li><a href="#">어워드</a></li>
+                <li><a href="#">개발자 인터뷰</a></li>
+                <li><a href="comu">리뷰 게시판</a></li>
+                <li><a href="footer">TUT란?</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="login">마이게임</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000" style="margin:0px 0px 0px -800px">
+      <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-sile-to = "0" class="active"></li>
+          <li data-target="#myCarousel" data-sile-to = "1"></li>
+          <li data-target="#myCarousel" data-sile-to = "2"></li>
+          <li data-target="#myCarousel" data-sile-to = "3"></li>
+          <li data-target="#myCarousel" data-sile-to = "4"></li>
+      </ol>
+<!--        사진넣기-->
+      <div class="carousel-inner">
+          <div class="carousel-item {% if forloop.counter == 1 %} active {% endif %}">
+              <img src="{% static '8.jpg' %}"  class="img-responsive center-block">
+          </div>
+          <div class="item">
+            <a href="tetrible"><img src="{% static '10.jpg' %}"  class="img-responsive center-block"></a>
+          </div>
+          <div class="item">
+              <img src="3.png"  class="img-responsive center-block">
+          </div>
+          <div class="item">
+              <img src="4.png" class="img-responsive center-block">
+          </div>
+          <div class="item">
+              <img src="5.png" class="img-responsive center-block">
+          </div>
+
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="margin:0px 0px 0px 850px">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#myCarousel" data-slide="next" style="margin:0px 850px 0px 0px">
+               <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+      </div>
+  </div>
+
+</body>
+
+</html>
+
+<!--CSS-->
+input:-ms-input-placeholder {color:#a8a8a8}
+input::-webkit-input-place {color:#a8a8a8}
+input::-moz-placeholder {color:#a8a8a8}
+
+
+.se-area{
+height: 40px;
+width:400px;
+margin:-105px 500px;
+border: 1px solid #000000;
+background:#ffffff;}
+
+.se{
+font-size:16px;
+width: 325px;
+padding: 10px 200px 0px 500px;
+border: 0px;
+outline: none;
+float: left;
+}
+
+button{
+width: 50px;
+height:100%;
+border: 0px;
+background: #686868;
+outline: none;
+float: right;
+color:#000000
+}
+
+.id a{
+a {text-decoration: none;}
+    font-size: 32; color: #fff;
+  }
+/*드롭메뉴 */
+
+@charset "utf-8;
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap');
+
+*{
+margin:0;
+padding:0;
+}
+
+body{
+font:17px 'Noto Sans KR',sans-serif;
+}
+
+a{
+  text-decoration:none;
+  color:404040;
+  }
+
+li{
+list-style:none;
+}
+
+
+<style type="text/css">
+a:link {text-decoration: none; color: #333333;}
+a:visited {text-decoration: none; color: #333333;}
+a:active {text-decoration: none; color: #333333;}
+a:hover {text-decoration: underline; color: red;}
+</style>

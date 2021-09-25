@@ -1,7 +1,65 @@
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	ul li{
+		list-style: none;
+	}
+	a {
+		text-decoration: none;
+		color:#ffffff;
+	}
+
+	#menu {
+		font:bold 16px "malgun gothic";
+		width:700px;
+		height:20px;
+		background: #ffffff;
+		color:white;
+		line-height: 30px;
+		margin:0 auto;
+		text-align: center;
+	}
+
+	#menu > ul > li {
+		float:left;
+		width:110px;
+		position:relative;
+	}
+	#menu > ul > li > ul {
+		width:130px;
+		display:none;
+		position: absolute;
+		font-size:14px;
+		color:white;
+		background: black;
+	}
+	#menu > ul > li:hover > ul {
+		display:block;
+		z-index: 999;
+
+	}
+	#menu > ul > li > ul > li:hover {
+		background: white;
+		transition: ease 1s;
+		position:relative;
+		}
+
+ div.box > .carou{
+
+	height: 300px;
+
+	width: 300px;
+}
+
+
+
+
+
+/*  버튼         */
 input:-ms-input-placeholder {color:#a8a8a8}
 input::-webkit-input-place {color:#a8a8a8}
 input::-moz-placeholder {color:#a8a8a8}
-
 
 .se-area{
 height: 40px;
@@ -58,8 +116,8 @@ list-style:none;
 
 
 <style type="text/css">
-a:link {text-decoration: none; color: #333333;}
+    a:link {text-decoration: none; color: #333333;}
 a:visited {text-decoration: none; color: #333333;}
 a:active {text-decoration: none; color: #333333;}
-a:hover {text-decoration: underline; color: red;}
+a:hover {text-decoration: underline; color: white;}
 </style>
