@@ -8,6 +8,7 @@
 	{% include "header.html" %}
 	{% load static %}
 	<link rel="stylesheet" href="{% static 'style3.css' %}">
+	<link rel="stylesheet" href="{% static 'carou.js' %}">
 	<link rel="stylesheet" href="C:\Users\skywa\Desktop\VSc\css">
 	<!-- 합쳐지고 최소화된 최신 CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
@@ -85,86 +86,90 @@
 				</li>
 				<li><a href="#">특집</a>
 					<ul>
-						<li><a href="#">SUB_MENU</a></li>
-						<li><a href="#">SUB_MENU2</a></li>
-						<li><a href="#">SUB_MENU3</a></li>
+						<li><a href="#">이벤트</a></li>
+						<li><a href="#">게임 이벤트</a></li>
 					</ul>
 				</li>
 				<li><a href="#">게임정보</a>
 					<ul>
-						<li><a href="#">SUB_MENU</a></li>
-						<li><a href="#">SUB_MENU2</a></li>
-						<li><a href="#">SUB_MENU3</a></li>
+						<li><a href="#">업체 정보</a></li>
+						<li><a href="#">공략</a></li>
+						<li><a href="#">일정</a></li>
+						<li><a href="#">게임쇼</a></li>
+						<li><a href="#">스크린샷</a></li>
 					</ul>
 				</li>
 				<li><a href="#">모바일</a>
 					<ul>
-						<li><a href="#">SUB_MENU</a></li>
-						<li><a href="#">SUB_MENU2</a></li>
-						<li><a href="#">SUB_MENU3</a></li>
+						<li><a href="#">뉴스</a></li>
+						<li><a href="#">모바일게임 순위</a></li>
+						<li><a href="#">커뮤니티</a></li>
 					</ul>
 				</li>
 				<li><a href="#">웹게임</a>
 					<ul>
-						<li><a href="#">SUB_MENU</a></li>
-						<li><a href="#">SUB_MENU2</a></li>
-						<li><a href="#">SUB_MENU3</a></li>
+						<li><a href="#">커뮤니티</a></li>
+						<li><a href="#">뉴스</a></li>
+
 					</ul>
 				</li>
 				<li><a href="#">고객센터</a>
 					<ul>
-						<li><a href="#">SUB_MENU</a></li>
-						<li><a href="#">SUB_MENU2</a></li>
-						<li><a href="#">SUB_MENU3</a></li>
+						<li><a href="#">문의 접수</a></li>
+						<li><a href="#">자주 하시는 질문</a></li>
+						<li><a href="#">방침</a></li>
 					</ul>
 				</li>
 			</ul>
 		</div>
 	</div>
 </nav>
+<div class="container">
 <a href="https://www.allaboutpc.co.kr/Event/EventInfoView.asp?IdxEventInfo=342"><img src="{% static '11.png' %}"
-																					 style="margin: 0px 350px"
-																					 id="banner"></a>
-<!--<a href="http://flexr.kingkongsoft.kr/simplejoin/"><img src="{% static '12.png' %}" width="100px"-->
-<!--														style="margin:10px 10px 30px"></a>-->
+																					 style="margin: 0px 65px"
+																					 id="banner" width="900"></a>
+<a href="http://flexr.kingkongsoft.kr/simplejoin/"><img src="{% static '12.png' %}" style="float:right; padding:0px -600px;"
+																					 id="right" width="110"></a>
 
-<div class="container"  >
+  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000" style="margin:10px 200px 0px -310px">
+      <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-sile-to = "0" class="active"></li>
+          <li data-target="#myCarousel" data-sile-to = "1"></li>
+          <li data-target="#myCarousel" data-sile-to = "2"></li>
+          <li data-target="#myCarousel" data-sile-to = "3"></li>
+          <li data-target="#myCarousel" data-sile-to = "4"></li>
+      </ol>
+<!--        사진넣기-->
+      <div class="carousel-inner">
+          <div class="item active">
+              <img src="{% static '1.png' %}" width="500" height="400" class="img-responsive center-block">
+          </div>
+          <div class="item">
+              <img src="{% static '8.jpg' %}" width="500" height="400" class="img-responsive center-block">
+          </div>
+          <div class="item">
+              <img src="{% static '3.png' %}" width="500" height="400" class="img-responsive center-block">
+          </div>
+          <div class="item">
+              <img src="{% static '4.png' %}" width="500" height="400" class="img-responsive center-block">
+          </div>
+          <div class="item">
+              <img src="{% static '7.jpg' %}" width="500" height="400" class="img-responsive center-block">
+          </div>
 
-	  <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000" style="margin:30px 0px 0px -625px" >
-	      <ol class="carousel-indicators">
-	          <li data-target="#myCarousel" data-sile-to = "0" class="active" ></li>
-	          <li data-target="#myCarousel" data-sile-to = "1"></li>
-	          <li data-target="#myCarousel" data-sile-to = "2"></li>
-	          <li data-target="#myCarousel" data-sile-to = "3"></li>
-	          <li data-target="#myCarousel" data-sile-to = "4"></li>
-	      </ol>
-	<!--        사진넣기-->
-	      <div class="carousel-inner"  >
-	          <div class="carousel-item {% if forloop.counter == 1 %} active {% endif %}" id="carou" >
-	              <img src="{% static '1.png' %}"  class="img-responsive center-block" width="600" height="100">
-	          </div>
-	          <div class="item">
-	            <a href="tetrible"><img src="{% static '10.jpg' %}"  class="img-responsive center-block"></a>
-	          </div>
-	          <div class="item">
-	              <img src="3.png"  class="img-responsive center-block">
-	          </div>
-	          <div class="item">
-	              <img src="4.png" class="img-responsive center-block">
-	          </div>
-	          <div class="item">
-	              <img src="5.png" class="img-responsive center-block">
-	          </div>
-
-	          <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="margin:0px 0px 0px 0px">
+          <a class="left carousel-control" href="#myCarousel" data-slide="prev" style="margin:0px 0px 0px 300px">
 	              <span class="glyphicon glyphicon-chevron-left"></span>
 	          </a>
-	          <a class="right carousel-control" href="#myCarousel" data-slide="next" style="margin:0px 0px 550px 0px" >
+	          <a class="right carousel-control" href="#myCarousel" data-slide="next" style="margin:0px 300px 0px 0px" >
 	               <span class="glyphicon glyphicon-chevron-right"></span>
 	          </a>
-	      </div>
-		  <img src="{% static '5.jpg' %}" width="200" height="300" style="margin:20px 100px 0px 0px;" align="right">
+      </div>
+  </div>
 </div>
-</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+<!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 </body>
 </html>
