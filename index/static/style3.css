@@ -7,7 +7,7 @@
 	}
 	a{
 		text-decoration: none;
-		color:#black;
+		color:black;
 
 	}
 a:hover { text-decoration:none !important;
@@ -97,6 +97,4 @@ color:#000000
 a {text-decoration: none;}
     font-size: 32; color: #fff;
 
-img{
-width:100;
-margin:100;}
+
