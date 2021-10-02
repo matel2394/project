@@ -20,4 +20,6 @@ def tetrible(request):
     return render(request,'tetrible.html')
 def write1(request):
     return render(request,'write1.html')
+def news(request):
+    return render(request,'news.html')
 # Create your views here.

@@ -11,5 +11,6 @@ path('고객센터',views.고객센터),
 path('write',views.write),
 path('tetrible',views.tetrible),
 path('write1',views.write1),
+path('news',views.news),
 
     ]

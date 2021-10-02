@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta charset="UTF-8">
+	<title>Title</title>
+
+	{% include "header.html" %}
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'style3.css' %}">
+	<link rel="stylesheet" href="{% static 'carou.js' %}">
+	<link rel="stylesheet" href="C:\Users\skywa\Desktop\VSc\css">
+	<!-- 합쳐지고 최소화된 최신 CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+	<!-- 부가적인 테마 -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+
+	<!--  스타일-->
+	<style>
+        @font-face {
+            font-family: 'EliceDigitalBaeum_Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            font-family: 'EliceDigitalBaeum_Bold';
+        }
+
+        /* 캐러셀 버튼의 그라데이션 없애기 */
+
+        .carousel-control {
+            background: none !important;
+        }
+
+
+	</style>
+
+
+</head>
+
+<body style="background-color:black;">
+
+<div>
+	<a href="http://127.0.0.1:8000/index#"> <img src="{% static '7.jpg' %}"
+												 style="display: block; margin: 10px  300px 20px 300px" width="150px">
+	</a>
+</div>
+<div class="se-area">
+	<input type="text" id="se" name="se" placeholder="검색어 입력" style="width:348px; height:38px;">
+	<button class="seb">검색</button>
+</div>
+<!--상단 메뉴-->
+<div class="container">
+	<ul class="nav navbar-white navbar-right">
+		<li><a href="login" style="margin:0px 0px 0px 900px; padding:0px; color:white" id="id">로그인</a></li>
+		<li><a href="signup" style="margin:0px 0px 0px 900px; padding:0px;   color:white" id="su">회원가입</a></li>
+	</ul>
+</div>
+
+
+<nav class="navbar navbar-default" style="font-color:text-white">
+	<div class="container">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+				aria-expanded="false" aria-controls="navbar">
+			<span class="sr-only"> toggle</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<div id="menu">
+			<ul>
+				<li><a>뉴스</a>
+					<ul>
+						<li><a href="news">전체</a></li>
+						<li><a href="#">온라인</a></li>
+						<li><a href="#">이번달 핫이슈</a></li>
+						<li><a href="#">비디오</a></li>
+						<li><a href="#">PC</a></li>
+						<li><a href="#">VR</a></li>
+					</ul>
+				</li>
+				<li><a>특집</a>
+					<ul>
+						<li><a href="#">이벤트</a></li>
+						<li><a href="#">게임 이벤트</a></li>
+					</ul>
+				</li>
+				<li><a>게임정보</a>
+					<ul>
+						<li><a href="#">업체 정보</a></li>
+						<li><a href="#">공략</a></li>
+						<li><a href="#">일정</a></li>
+						<li><a href="#">게임쇼</a></li>
+						<li><a href="#">스크린샷</a></li>
+					</ul>
+				</li>
+				<li><a>모바일</a>
+					<ul>
+						<li><a href="#">뉴스</a></li>
+						<li><a href="#">모바일게임 순위</a></li>
+						<li><a href="#">커뮤니티</a></li>
+					</ul>
+				</li>
+				<li><a>웹게임</a>
+					<ul>
+						<li><a href="#">커뮤니티</a></li>
+						<li><a href="#">뉴스</a></li>
+
+					</ul>
+				</li>
+				<li><a>고객센터</a>
+					<ul>
+						<li><a href="#">문의 접수</a></li>
+						<li><a href="#">자주 하시는 질문</a></li>
+						<li><a href="#">방침</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<ul>
+    <li>순서 없는 목록의 아이템 1</li>
+    <li>
+        순서 없는 목록의 아이템 2
+        <ul>
+            <li>추가 목록 아이템 1</li>
+            <li>추가 목록 아이템 2</li>
+        </ul>
+    </li>
+    <li>순서 없는 목록의 아이템 3</li>
+</ul>
+
+<ol>
+    <li>순서 있는 목록의 아이템 1</li>
+    <li>순서 있는 목록의 아이템 2</li>
+    <li>순서 있는 목록의 아이템 3</li>
+</ol>
+
+</body>
+</html>

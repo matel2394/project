@@ -62,10 +62,11 @@ a:hover { text-decoration:none !important;
 
 
 
-/*  버튼         */
+/*  버튼  */
 input:-ms-input-placeholder {color:#a8a8a8}
 input::-webkit-input-place {color:#a8a8a8}
 input::-moz-placeholder {color:#a8a8a8}
+
 
 .se-area{
 height: 40px;
@@ -94,7 +95,8 @@ color:#000000
 }
 
 
-a {text-decoration: none;}
-    font-size: 32; color: #fff;
+.div{
+display:flex;
+}
 
 
