@@ -82,9 +82,12 @@
 			#menu > ul > li:hover > ul {
 				display:block;
 				z-index: 999;
-
-
 			}
+
+			#menu > ul > li > ul > li:hover {
+		background: white;
+		transition: ease 1s;
+		}
 
 
 
@@ -203,14 +206,24 @@
 		#news2 a{
 		text-decoration: none;
 		color:white;
+		}
+
+		#news2 {
+		display:flex;
+		}
 
 		#news2 a:hover{
 		 text-decoration:none !important;
-		color:black}
+		color:black;
+		}
 
 		p{
 		padding:0;
 		margin:0;
+		}
+
+		#list{
+		margin:10px 100px 0px;
 		}
 
 
@@ -260,7 +273,7 @@
 				<li><a>뉴스</a>
 					<ul>
 						<li><a href="news">전체</a></li>
-						<li><a href="#">온라인</a></li>
+						<li><a href="online">온라인</a></li>
 						<li><a href="#">이번달 핫이슈</a></li>
 						<li><a href="#">비디오</a></li>
 						<li><a href="#">PC</a></li>
@@ -269,8 +282,8 @@
 				</li>
 				<li><a>특집</a>
 					<ul>
-						<li><a href="#">이벤트</a></li>
-						<li><a href="#">게임 이벤트</a></li>
+						<li><a href="event">이벤트</a></li>
+						<li><a href="game_event">게임 이벤트</a></li>
 					</ul>
 				</li>
 				<li><a>게임정보</a>
@@ -291,7 +304,7 @@
 				</li>
 				<li><a>웹게임</a>
 					<ul>
-						<li><a href="#">커뮤니티</a></li>
+						<li><a href="comu">커뮤니티</a></li>
 						<li><a href="#">뉴스</a></li>
 
 					</ul>
@@ -429,18 +442,19 @@
 	<hr align="right" style="border: solid 1px white; width: 90%;">
 </div>
 
-<div id="news" class="container">
-	<img src="{% static '1.png' %}" width="100" height="60">
-	<a href="#"><h3>철권7 한일전,한국 2 대 0으로 압도적 승리</h3></a>
+<div id="news" class="container" align="left">
+	<img src="{% static '1.png' %}" width="100" height="60" style="margin:20px 10px 10px 10px;">
+	<a href="#"><h1 style="padding:10px 0px 0px">철권7 한일전,한국 2 대 0으로 압도적 승리</h1></a>
 
 </div>
 
-<div id="news2" class="container">
-	<br><a href="#"><p style="color:white; font-size:15px; margin:0 0 0 10px; padding: 0 0 0 0">오뚜기 딜러 라면과의 첫 조우는 최악이었다</p></a>
-	<a href="#2"><p style="color:white; font-size:15px; margin:0 0 0 10px; padding: 0 0 0 0 ">몬스터헌터 라이즈,PC 스팀 예약구매 시작!</p></a>
-	<a href="#3"><p style="color:white; font-size:15px; margin:0 0 0 10px; padding: 0 0 0 0">닌텐도 스위치,계산기 이어 시계 출시</p></a><br>
-	<img src="{% static '13.png' %}" style="margin:0 0 0 700px; padding: 0 0 -100 0;">
-	<hr align="center" style="border: solid 1px white; width: 43%; margin:0 0 0 10px">
+<div id="news2" class="list; container">
+	<ul id="list">
+		<li><a href="#"><p style="color:white; font-size:20px;margin-left: 30px;">오뚜기 딜러 라면과의 첫 조우는 최악이었다</p></a>
+		<li><a href="#2"><p style="color:white; font-size:20px;margin-left: 30px; ">몬스터헌터 라이즈,PC 스팀 예약구매 시작!</p></a></li>
+		<li><a href="#3"><p style="color:white; font-size:20px; margin-left: 30px;">닌텐도 스위치,계산기 이어 시계 출시</p></a><br></li>
+	</ul>
+
 </div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

@@ -22,4 +22,10 @@ def write1(request):
     return render(request,'write1.html')
 def news(request):
     return render(request,'news.html')
+def onlien(request):
+    return render(request,'online.html')
+def event(request):
+    return render(request,'event.html')
+def game_event(request):
+    return render(request,'game_event.html')
 # Create your views here.

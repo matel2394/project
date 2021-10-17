@@ -12,5 +12,8 @@ path('write',views.write),
 path('tetrible',views.tetrible),
 path('write1',views.write1),
 path('news',views.news),
+path('online',views.onlien),
+path('event',views.event),
+path('game_event',views.game_event),
 
     ]

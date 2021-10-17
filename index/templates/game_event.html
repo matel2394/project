@@ -1,3 +1,9 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -219,7 +225,10 @@
 					<ul>
 						<li><a href="news">전체</a></li>
 						<li><a href="online">온라인</a></li>
-
+						<li><a href="hotissue">이번달 핫이슈</a></li>
+						<li><a href="#">비디오</a></li>
+						<li><a href="#">PC</a></li>
+						<li><a href="#">VR</a></li>
 					</ul>
 				</li>
 				<li><a>특집</a>
@@ -241,7 +250,7 @@
 					<ul>
 						<li><a href="#">뉴스</a></li>
 						<li><a href="#">모바일게임 순위</a></li>
-						<li><a href="comu">커뮤니티</a></li>
+						<li><a href="#">커뮤니티</a></li>
 					</ul>
 				</li>
 				<li><a>커뮤니티</a>
@@ -262,63 +271,36 @@
 		</div>
 	</div>
 </nav>
+
 <div class="container">
 	<a href="https://www.allaboutpc.co.kr/Event/EventInfoView.asp?IdxEventInfo=342"><img src="{% static '11.png' %}"
-																						 style="margin: 0px 65px"
+																						 style="margin: 0px 65px 40px"
 																						 id="banner" width="900"></a>
-	<p style="color:white; margin:10px 65px">총합 *(!&(#개의 뉴스가 있습니다</p>
-	<a href="http://flexr.kingkongsoft.kr/simplejoin/"><img src="{% static '12.png' %}" style="float:right; padding:0px -600px;"
-															id="right" width="110"></a>
-	<hr align="center" style="border: solid 1px white; width: 88%;">
-
-	<div class="news-list">
-			<div class="content-left">
-
-				<ul class="list_news" style="margin:0px 30px 0px 0px">
-									<li class="item_headline" style=" margin-left: 58px;">
-						<a href="/view.php?gid=1668782" class="link_thumb static-thumbnail"><span class="static-thumbnail-style">
-						</span><img src="https://cdn.gamemeca.com/gmdata/0001/668/782/gm671323_211017-risell-uu2.jpg" width="334" height="186" /></a>
-						<div class="cont_thumb_h">
-							<h3><a href="/view.php?gid=1668782" >마인크래프트에 진흙과 개구리가 있는 ‘야생' 업데이트가 온다</a></h3>
-						</div>
-						<div class="desc_thumb_h" style="color:white">국내 기준으로 17일에 온라인으로 진행된 마인크래프트 라이브 2021을 통해 내년에 게임에 추가되는 신규 콘텐츠 다수가 공개됐다.<br>
-							내년 업데이트 타이틀은 '더 와일드'이며, 늪지대와 지하세계를
-							배경으로 다양한 생물과 관련 아이템이 추가된다.<br>
-							먼저 연말에는 지난 6월에 진행된 ‘동굴과 졀벽’ 업데이트 후속 패치가 진행된다</div>
-						<div class="day_news"  style="color:white">2021.10.17 11:19</div>
-										<hr align="center" style="border: solid 1px white; width: 88%;">
-					</li>
-
-					<li class="item_headline" style=" margin-left: 58px;">
-						<a href="/view.php?gid=1668782" class="link_thumb static-thumbnail"><span class="static-thumbnail-style">
-						</span><img src="https://cdn.gamemeca.com/gmdata/0001/668/780/gm279241_211017-risell-uu1.jpg" width="334" height="186" /></a>
-						<div class="cont_thumb_h">
-							<h3><a href="/view.php?gid=1668782" >밈에서 시작된 Xbox 미니 냉장고, 12월에 출시된다</a></h3>
-						</div>
-						<div class="desc_thumb_h" style="color:white">Xbox 시리즈 X는 첫 공개 당시 네모반듯한 외형으로 ‘냉장고 같다’는 평을 들었다. 이후 Xbox 냉장고는 일종의 밈으로 떠올랐는데<br>
-							오는 12월에 MS가 공식으로 선보이는 Xbox 시리즈 X 미니 냉장고가 출시된다. 게이머들의 밈이 현실이 되는 순간이다. MS는 지난 15일<br>
-							Xbox 공식 홈페이지를 통해 Xbox 시리즈 X 미니 냉장고에 대한 새로운 소식을 전했다</div>
-						<div class="day_news"  style="color:white">2021.10.17 11:00</div>
-					<hr align="center" style="border: solid 1px white; width: 88%;">
-					</li>
-
-					<li class="item_headline" style=" margin-left: 58px;">
-						<a href="/view.php?gid=1668782" class="link_thumb static-thumbnail"><span class="static-thumbnail-style">
-						</span><img src="https://cdn.gamemeca.com/gmdata/0001/668/774/gm790269_211016-risell-ii7.jpg" width="334" height="186" /></a>
-						<div class="cont_thumb_h">
-							<h3><a href="/view.php?gid=1668782" >스팀 암호화폐 금지 발표, 미르4 "대응책 마련했다"</a></h3>
-						</div>
-						<div class="desc_thumb_h" style="color:white">밸브가 스팀에서 암호화폐, NFT 등을 제공하는 게임을 금지한다. 이를 가장 명확하게 볼 수 있는 부분은 스팀에 게임을 내는 개발자들이<br>
-							지켜야 할 사항을 정리한 스팀웍스 ‘온보딩’ 지침이다. 여기에는 스팀을 통해 제공하지 말아야 할 콘텐츠 유형을 정리한 부분도 있는데, 최근에 추가된 내용이<br>
-							'암호화폐 또는 NFT를 발행하거나, 교환할 수 있는 블록체인 기술을 기반으로 한 앱'이다</div>
-						<div class="day_news"  style="color:white">2021.10.16 13:20</div>
-					<hr align="center" style="border: solid 1px white; width: 88%;">
-					</li>
-
-				</ul>
-			</div>
-	</div>
 </div>
 
-</body>
-</html>
+<img src="{% static '14.jpg' %}" width="200" height="250"
+style="margin:0px px 30px 367px; margin-left: 367px; margin-bottom: 30px;" >
+<img src="{% static '14.jpg' %}" width="200" height="250"
+style=";margin:0px px 0px 367px;margin-left: 30px; margin-bottom: 30px;">
+<img src="{% static '14.jpg' %}" width="200" height="250"
+style="margin:0px px 0px 367px;margin-left: 30px; margin-bottom: 30px;">
+<img src="{% static '14.jpg' %}" width="200" height="250"
+style="margin:0px px 0px 367px;margin-left: 30px; margin-bottom: 30px;">
+<br>
+<img src="{% static '14.jpg' %}" width="200" height="250"
+style="margin:0px px 0px 367px;margin-left: 367px; margin-bottom: 30px;">
+<img src="{% static '14.jpg' %}" width="200" height="250"
+style="margin:0px px 0px 367px;margin-left: 30px; margin-bottom: 30px;">
+<img src="{% static '14.jpg' %}" width="200" height="250"
+style="margin:0px px 0px 367px;margin-left: 30px; margin-bottom: 30px;">
+<img src="{% static '14.jpg' %}" width="200" height="250"
+style="margin:0px px 0px 367px;margin-left: 30px; margin-bottom: 30px;">
+<br>
+<img src="{% static '14.jpg' %}" width="200" height="250"
+style="margin:0px px 0px 367px;margin-left: 367px; margin-bottom: 30px;">
+<img src="{% static '14.jpg' %}" width="200" height="250"
+style="margin:0px px 0px 367px;margin-left: 30px; margin-bottom: 30px;">
+<img src="{% static '14.jpg' %}" width="200" height="250"
+style="margin:0px px 0px 367px;margin-left: 30px; margin-bottom: 30px;">
+<img src="{% static '14.jpg' %}" width="200" height="250"
+style="margin:0px px 0px 367px;margin-left: 30px; margin-bottom: 30px;">
