@@ -144,44 +144,97 @@
 		display:flex;
 		}
 
-		#ranking{
-		color:white;
-		}
 
 
+	table {
+		border-collapse: collapse;
+											<!--표 사이 간격 없애는데에 사용-->
+	}
 
-		#headline{
-		display:flex;}
+	caption {
+		display: none;
+											<!--텍스트 숨기기-->
+	}
 
-		#news{
-		color:white;
-		margin:0px 0px 0px 300px;
-		display:flex;
-		flex-wrap:wrap
-		}
-
-		a{
+	a {
 		text-decoration: none;
-		color:white;
+		color: inherit;
+											/*하이퍼링크 색 제거*/
+											/*하이퍼링크 색 변경*/
+	}
 
-		a:hover{ text-decoration:none !important;
-				color:black}
+	a:hover { text-decoration:none ;
+				color:white;}
 
+	.board_list_wrap {
+		padding: 40px;
+	}
 
+	.board_list {
+		width: 60%;
+		border-top: 2px solid white;
+		color: white;
+		margin-left: 340px;
 
+										/*표 크기 조절*/
+										/* */
+	}
 
+	.board_list tr {
+		border-bottom: 1px solid #ccc;
+	}
 
+	.board_list th,
+	.board_list td {
+		padding: 10px;
+		font-size: 14px;
+	}
 
+	.board_list td {
+		text-align: center;
+									/*td 텍스트 가운데 정렬 */
+	}
 
-		p{
-		padding:0;
-		margin:0;
-		}
+	.board_list .tit {
+		text-align: left;
+	}
 
-		li{
-		margin:0;
+	.board_list .tit:hover {
+		text-decoration: underline;
+	}
 
-		}
+	.board_list_wrap .paging {
+		margin-top: 20px;
+		text-align: center;
+		font-size: 0;
+	}
+	.board_list_wrap .paging a {
+		display: inline-block;
+		margin-left: 10px;
+		padding: 5px 10px;
+		border-radius: 100px;
+		font-size: 12px;
+	}
+	.board_list_wrap .paging a:first-child {
+		margin-left: 0;
+	}
+
+	.board_list_wrap .paging a.bt {
+		border: 1px solid #eee;
+		background: #eee;
+	}
+
+	.board_list_wrap .paging a.num {
+		border: 1px solid white;
+		font-weight: 600;
+		color: white;
+	}
+
+	.board_list_wrap .paging a.num.on {
+		background: white;
+		color: #000000;
+	}
+
 
 
 
@@ -277,23 +330,154 @@
 																						 style="margin: 0px 65px 40px"
 																						 id="banner" width="900"></a>
 </div>
-<table>
-    <thead>
-    <tr>
-        <th>번호</th>
-        <th>제목</th>
-        <th>작성자</th>
-        <th>날짜</th>
-        <th>조회수</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>123 </td>
-        <td>asdf </td>
-        <td>dd </td>
-        <td>2021-10-17 </td>
-        <td>123 </td>
-    </tr>
-    </tbody>
-</table>
+<div class="board_list_wrap">
+            <table class="board_list">
+                <caption>게시판 목록</caption>
+                <thead>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>글쓴이</th>
+                        <th>작성일</th>
+                        <th>조회</th>
+                    </tr>
+                </thead>
+                <tbody>
+				<tr>
+                        <td>14</td>
+                        <td class="tit">
+                            <a href="#">게시글 제목14</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-10-21</td>
+                        <td>111</td>
+                    </tr>
+					<tr>
+                        <td>13</td>
+                        <td class="tit">
+                            <a href="#">게시글 제목13</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-10-21</td>
+                        <td>111</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td class="tit">
+                            <a href="#">게시글 제목12</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-10-21</td>
+                        <td>111</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td class="tit">
+                            <a href="#">게시글 제목11</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-10-21</td>
+                        <td>222</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td class="tit">
+                            <a href="#">게시글 제목10</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-10-21</td>
+                        <td>333</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="tit">
+                            <a href="#">게시글 제목9</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-10-21</td>
+                        <td>222</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td class="tit">
+                            <a href="#">게시글 제목8</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-10-21</td>
+                        <td>111</td>
+                    </tr>
+					<tr>
+                        <td>7</td>
+                        <td class="tit">
+                            <a href="#">게시글 제목7</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-10-21</td>
+                        <td>111</td>
+                    </tr>
+					<tr>
+                        <td>6</td>
+                        <td class="tit">
+                            <a href="#">게시글 제목6</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-10-21</td>
+                        <td>111</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td class="tit">
+                            <a href="#">게시글 제목5</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-10-21</td>
+                        <td>111</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td class="tit">
+                            <a href="#">게시글 제목4</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-10-21</td>
+                        <td>222</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td class="tit">
+                            <a href="#">게시글 제목3</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-10-21</td>
+                        <td>333</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="tit">
+                            <a href="#">게시글 제목2</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-10-21</td>
+                        <td>222</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="tit">
+                            <a href="#">게시글 제목1</a>
+                        </td>
+                        <td>관리자</td>
+                        <td>2021-10-21</td>
+                        <td>111</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="paging">
+                <a href="#" class="bt">첫 페이지</a>
+                <a href="#" class="bt">이전 페이지</a>
+                <a href="#" class="num on">1</a>
+                <a href="#" class="num">2</a>
+                <a href="#" class="num">3</a>
+                <a href="#" class="bt">다음 페이지</a>
+                <a href="#" class="bt">마지막 페이지</a>
+            </div>
+        </div>
