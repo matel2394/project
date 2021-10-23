@@ -5,12 +5,6 @@
     <title>Title</title>
 </head>
 <body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-<meta charset="UTF-8">
-	<title>Title</title>
 
 	{% include "header.html" %}
 	{% load static %}
@@ -211,6 +205,9 @@
 </div>
 
 
+
+
+
 <nav class="navbar navbar-default" style="font-color:text-white">
 	<div class="container">
 		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
@@ -276,36 +273,39 @@
 				<ul class="list_news" style="margin:0px 30px 0px 0px">
 									<li class="item_headline" style=" margin-left: 58px;">
 						<a href="/view.php?gid=1668782" class="link_thumb static-thumbnail"><span class="static-thumbnail-style">
-						</span><img src="https://cdn.logo.com/hotlink-ok/logo-social.png" width="334" height="186" /></a>
+						</span><img src="{% static '1.png' %}" width="334" height="186" /></a>
 						<div class="cont_thumb_h">
-							<h3><a href="/view.php?gid=1668782" >*&^*&^*가 (*&(*!(*!추진</a></h3>
+							<h3><a href="/view.php?gid=1668782" >인피니티킹덤 국가대항전에서 한국이 우승을 차지했다</a></h3>
 						</div>
-						<div class="desc_thumb_h" style="color:white">&^!(*#&^&!*^*(!asyiouyd9u&^8dsasihdkjh2ljhalskdhashd<br>
-						*&(*&()&()&()AS&D()&@)*&#!*()&(!&E*U!(&E*(!)D*()&E(*)!&)( )(D!&)(C&)(EB)(*</div>
+						<div class="desc_thumb_h" style="color:white">
+                                                              유주게임즈코리아가 22일, 자사 모바일 SLG ‘인피니티킹덤’에서 실시된 국가대항전에서 한국이 최종 우승을 차지했다고 알렸다.<br>
+                          9월 23일부터 10월 20일까지 약 한달 간 게임 내 점령전 콘텐츠 유적쟁탈전을 통해 진행됐던 이번 국가대항전에서는 한국이 1위를 차지했으며, <br>
+                          미국과 유럽이 2위, 홍콩과 대만이 3위를 달성했다</div>
 						<div class="day_news"  style="color:white">2021.10.17 11:19</div>
 										<hr align="center" style="border: solid 1px white; width: 88%;">
 					</li>
 
 					<li class="item_headline" style=" margin-left: 58px;">
 						<a href="/view.php?gid=1668782" class="link_thumb static-thumbnail"><span class="static-thumbnail-style">
-						</span><img src="https://cdn.logo.com/hotlink-ok/logo-social.png" width="334" height="186" /></a>
+						</span><img src="{% static '1.png' %}" width="334" height="186" /></a>
 						<div class="cont_thumb_h">
-							<h3><a href="/view.php?gid=1668782" >&^^^^^^^^^^^^^^^^^^(</a></h3>
+							<h3><a href="/view.php?gid=1668782" >엠게임 첫 모바일 전략 게임 '이모탈' 구글·원스토어 출시</a></h3>
 						</div>
-						<div class="desc_thumb_h" style="color:white">&^!(*#&^&!*^*(!asyiouyd9u&^8dsasihdkjh2ljhalskdhashd<br>
-						*&(*&()&()&()AS&D()&@)*&#!*()&(!&E*U!(&E*(!)D*()&E(*)!&)( )(D!&)(C&)(EB)(*</div>
+						<div class="desc_thumb_h" style="color:white">엠게임은 22일 자사 모바일 전략 신작 이모탈을 구글플레이, 원스토어에 출시했다.
+                          <br>엠게임 첫 모바일 전략 게임인 이모탈은 시뮬레이션과 RPG를 결합했다. 영지를 운영하며, 다양한 스쿼드를 수집·육성하고, <br>이를 토대로 군대를 키워 던전 탐험과 퀘스트를 진행한다</div>
 						<div class="day_news"  style="color:white">2021.10.17 11:00</div>
 					<hr align="center" style="border: solid 1px white; width: 88%;">
 					</li>
 
 					<li class="item_headline" style=" margin-left: 58px;">
 						<a href="/view.php?gid=1668782" class="link_thumb static-thumbnail"><span class="static-thumbnail-style">
-						</span><img src="https://cdn.logo.com/hotlink-ok/logo-social.png" width="334" height="186" /></a>
+						</span><img src="https://cdn.gamemeca.com/gmdata/0001/668/774/gm790269_211016-risell-ii7.jpg" width="334" height="186" /></a>
 						<div class="cont_thumb_h">
-							<h3><a href="/view.php?gid=1668782" >_()*)*()&^!#)(*!$</a></h3>
+							<h3><a href="/view.php?gid=1668782" >스팀 암호화폐 금지 발표, 미르4 "대응책 마련했다"</a></h3>
 						</div>
-						<div class="desc_thumb_h" style="color:white">&^!(*#&^&!*^*(!asyiouyd9u&^8dsasihdkjh2ljhalskdhashd<br>
-						*&(*&()&()&()AS&D()&@)*&#!*()&(!&E*U!(&E*(!)D*()&E(*)!&)( )(D!&)(C&)(EB)(*</div>
+						<div class="desc_thumb_h" style="color:white">밸브가 스팀에서 암호화폐, NFT 등을 제공하는 게임을 금지한다. 이를 가장 명확하게 볼 수 있는 부분은 스팀에 게임을 내는 개발자들이<br>
+							지켜야 할 사항을 정리한 스팀웍스 ‘온보딩’ 지침이다. 여기에는 스팀을 통해 제공하지 말아야 할 콘텐츠 유형을 정리한 부분도 있는데, 최근에 추가된 내용이<br>
+							'암호화폐 또는 NFT를 발행하거나, 교환할 수 있는 블록체인 기술을 기반으로 한 앱'이다</div>
 						<div class="day_news"  style="color:white">2021.10.16 13:20</div>
 					<hr align="center" style="border: solid 1px white; width: 88%;">
 					</li>
@@ -314,8 +314,6 @@
 			</div>
 	</div>
 </div>
-
 </body>
-</html>
 </body>
 </html>

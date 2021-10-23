@@ -15,5 +15,10 @@ path('news',views.news),
 path('online',views.onlien),
 path('event',views.event),
 path('game_event',views.game_event),
+path('gong',views.gong),
+path('mobile',views.mobile),
+path('cal',views.cal),
+path('company',views.comapny),
+path('vote',views.vote),
 
     ]

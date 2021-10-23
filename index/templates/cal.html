@@ -1,17 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-<meta charset="UTF-8">
-	<title>Title</title>
 
+	<meta charset="UTF-8">
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Title</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	{% include "header.html" %}
 	{% load static %}
 	<link rel="stylesheet" href="{% static 'style3.css' %}">
@@ -145,44 +139,46 @@
 		display:flex;
 		}
 
-		#ranking{
-		color:white;
-		}
+		* {
+    margin: 0;
+    padding: 0
+}
 
+.custom_calendar_table td {
+    text-align: center;
+}
 
+.custom_calendar_table thead.cal_date th {
+    font-size: 1.5rem;
+}
 
-		#headline{
-		display:flex;}
+.custom_calendar_table thead.cal_date th button {
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+}
 
-		#news{
-		color:white;
-		margin:0px 0px 0px 300px;
-		display:flex;
-		flex-wrap:wrap
-		}
+.custom_calendar_table thead.cal_week th {
+    background-color: #288CFF;
+    color: #fff;
+}
 
-		a{
-		text-decoration: none;
-		color:white;
+.custom_calendar_table tbody td {
+    cursor: pointer;
+}
 
-		a:hover{ text-decoration:none !important;
-				color:black}
+.custom_calendar_table tbody td:nth-child(1) {
+    color: red;
+}
 
+.custom_calendar_table tbody td:nth-child(7) {
+    color: #288CFF;
+}
 
-
-
-
-
-
-		p{
-		padding:0;
-		margin:0;
-		}
-
-		li{
-		margin:0;
-
-		}
+.custom_calendar_table tbody td.select_day {
+    background-color: #288CFF;
+    color: #fff;
+}
 
 
 
@@ -209,7 +205,6 @@
 		<li><a href="signup" style="margin:0px 0px 0px 900px; padding:0px;   color:white" id="su">회원가입</a></li>
 	</ul>
 </div>
-
 
 <nav class="navbar navbar-default" style="font-color:text-white">
 	<div class="container">
@@ -261,61 +256,7 @@
 		</div>
 	</div>
 </nav>
-<div class="container">
-	<a href="https://www.allaboutpc.co.kr/Event/EventInfoView.asp?IdxEventInfo=342"><img src="{% static '11.png' %}"
-																						 style="margin: 0px 65px"
-																						 id="banner" width="900"></a>
-	<p style="color:white; margin:10px 65px">총합 *(!&(#개의 뉴스가 있습니다</p>
-	<a href="http://flexr.kingkongsoft.kr/simplejoin/"><img src="{% static '12.png' %}" style="float:right; padding:0px -600px;"
-															id="right" width="110"></a>
-	<hr align="center" style="border: solid 1px white; width: 88%;">
-
-	<div class="news-list">
-			<div class="content-left">
-
-				<ul class="list_news" style="margin:0px 30px 0px 0px">
-									<li class="item_headline" style=" margin-left: 58px;">
-						<a href="/view.php?gid=1668782" class="link_thumb static-thumbnail"><span class="static-thumbnail-style">
-						</span><img src="https://cdn.logo.com/hotlink-ok/logo-social.png" width="334" height="186" /></a>
-						<div class="cont_thumb_h">
-							<h3><a href="/view.php?gid=1668782" >*&^*&^*가 (*&(*!(*!추진</a></h3>
-						</div>
-						<div class="desc_thumb_h" style="color:white">&^!(*#&^&!*^*(!asyiouyd9u&^8dsasihdkjh2ljhalskdhashd<br>
-						*&(*&()&()&()AS&D()&@)*&#!*()&(!&E*U!(&E*(!)D*()&E(*)!&)( )(D!&)(C&)(EB)(*</div>
-						<div class="day_news"  style="color:white">2021.10.17 11:19</div>
-										<hr align="center" style="border: solid 1px white; width: 88%;">
-					</li>
-
-					<li class="item_headline" style=" margin-left: 58px;">
-						<a href="/view.php?gid=1668782" class="link_thumb static-thumbnail"><span class="static-thumbnail-style">
-						</span><img src="https://cdn.logo.com/hotlink-ok/logo-social.png" width="334" height="186" /></a>
-						<div class="cont_thumb_h">
-							<h3><a href="/view.php?gid=1668782" >&^^^^^^^^^^^^^^^^^^(</a></h3>
-						</div>
-						<div class="desc_thumb_h" style="color:white">&^!(*#&^&!*^*(!asyiouyd9u&^8dsasihdkjh2ljhalskdhashd<br>
-						*&(*&()&()&()AS&D()&@)*&#!*()&(!&E*U!(&E*(!)D*()&E(*)!&)( )(D!&)(C&)(EB)(*</div>
-						<div class="day_news"  style="color:white">2021.10.17 11:00</div>
-					<hr align="center" style="border: solid 1px white; width: 88%;">
-					</li>
-
-					<li class="item_headline" style=" margin-left: 58px;">
-						<a href="/view.php?gid=1668782" class="link_thumb static-thumbnail"><span class="static-thumbnail-style">
-						</span><img src="https://cdn.logo.com/hotlink-ok/logo-social.png" width="334" height="186" /></a>
-						<div class="cont_thumb_h">
-							<h3><a href="/view.php?gid=1668782" >_()*)*()&^!#)(*!$</a></h3>
-						</div>
-						<div class="desc_thumb_h" style="color:white">&^!(*#&^&!*^*(!asyiouyd9u&^8dsasihdkjh2ljhalskdhashd<br>
-						*&(*&()&()&()AS&D()&@)*&#!*()&(!&E*U!(&E*(!)D*()&E(*)!&)( )(D!&)(C&)(EB)(*</div>
-						<div class="day_news"  style="color:white">2021.10.16 13:20</div>
-					<hr align="center" style="border: solid 1px white; width: 88%;">
-					</li>
-
-				</ul>
-			</div>
-	</div>
-</div>
-
-</body>
-</html>
+    <div id="calendarForm"></div>
+<!-- //bbs_tbl_type2 -->
 </body>
 </html>

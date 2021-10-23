@@ -28,4 +28,15 @@ def event(request):
     return render(request,'event.html')
 def game_event(request):
     return render(request,'game_event.html')
+def gong(request):
+    return render(request,'gong.html')
+def mobile(request):
+    return render(request,'mobile.html')
+def cal(request):
+    return render(request,'cal.html')
+def comapny(request):
+    return render(request,'company.html')
+def vote(request):
+    return render(request,'vote.html')
+
 # Create your views here.
