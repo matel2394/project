@@ -5,10 +5,8 @@
 	<meta charset="UTF-8">
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Title</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	{% include "header.html" %}
 	{% load static %}
-	<link rel="stylesheet" href="{% static 'style3.css' %}">
 	<link rel="stylesheet" href="{% static 'carou.js' %}">
 	<link rel="stylesheet" href="C:\Users\skywa\Desktop\VSc\css">
 	<!-- 합쳐지고 최소화된 최신 CSS -->
@@ -16,8 +14,54 @@
 
 	<!-- 부가적인 테마 -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
+	<script type="text/javascript" >
+
+    var today = new Date();//오늘 날짜
+
+
+    function prevClaendar(){
+      today = new Date(today.getFullYear(), today.getMonth()-1,today.getDate());
+      buildCalendar();
+    }
+
+    function nextCalendar(){
+      today = new Date(today.getFullYear(), today.getMonth()+1,today.getDate());
+      buildCalendar();
+
+    }
+    function buildCalendar(){
+      var nMonth = new Date(today.getFullYear(),today.getMonth(),1);
+      var lastDate =new Date(today.getFullYear(),today.getMonth()+1,0);
+      var tblCalendar =document.getElementById("calendar");
+      var tblCalendarYM =document.getElementById("calendarYM");
+      tblCalendarYM.innerHTML = today.getFullYear()+"년"+(today.getMonth()+1)+"월";
+
+
+      while(tblCalendar.rows.length>2){
+        tblCalendar.deleteRow(tblCalendar.rows.length -1);
+      }
+      var row = null;
+      row =tblCalendar.insertRow();
+      var cnt =0;
+      // 1일이 시작되는 칸을 맞추어줌
+
+      for ( i=0; i <nMonth.getDay(); i++) {
+        cell =row.insertCell();
+        cnt = cnt + 1;
+    }
+
+      for(i=1; i<=lastDate.getDate(); i++){
+        cell =row.insertCell();
+        cell.innerHTML = i;
+        cnt = cnt + 1;
+        if (cnt%7 == 0)    //1주=7일
+         row = calendar.insertRow();
+
+      }
+    }
+
+    </script>
 
 	<!--  스타일-->
 	<style>
@@ -180,6 +224,8 @@
     color: #fff;
 }
 
+	#calender{
+	margin-left:100px}
 
 
 	</style>
@@ -256,7 +302,38 @@
 		</div>
 	</div>
 </nav>
-    <div id="calendarForm"></div>
+	<table id="calendar"  border="3" align="center" width="800" height="500"  style="color:white; margin-left: 400px;">
+      <tr >
+        <td align ="center"> <label onclick="prevClaendar()"><</label> </td>
+        <td colspan="5" align ="center" id="calendarYM">yyyy년 m월</td>
+        <td align ="center"> <label onclick="nextCalendar()">></label> </td>
+      </tr>
+
+      <tr>
+        <td align="center">일</td>
+        <td align="center">월</td>
+        <td align="center">화</td>
+        <td align="center">수</td>
+        <td align="center">목</td>
+        <td align="center">금</td>
+        <td align="center">토</td>
+      </tr>
+
+    </table>
+
+        <!--js에서 만든   buildCalendar(); 함수를 테이불 밑에 붙이면 완성된다
+        테이블 전체 테두리가 안되는것과 마지막일 다은 공란이 안생기는 점이 보안
+        해야한다-->
+        <!-- <script type="text/javascript">
+          buildCalendar();
+        </script>
+        컨트롤 하는것을 모르겠다 -->
+
+        <script type="text/javascript" >
+
+          buildCalendar();
+        </script>
+
 <!-- //bbs_tbl_type2 -->
 </body>
 </html>
