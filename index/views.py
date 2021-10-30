@@ -38,5 +38,7 @@ def comapny(request):
     return render(request,'company.html')
 def vote(request):
     return render(request,'vote.html')
+def mobilerank(request):
+    return render(request,'mobilerank.html')
 
 # Create your views here.

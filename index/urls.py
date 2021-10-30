@@ -20,5 +20,6 @@ path('mobile',views.mobile),
 path('cal',views.cal),
 path('company',views.comapny),
 path('vote',views.vote),
+path('mobilerank',views.mobilerank),
 
     ]

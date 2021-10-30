@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Title</title>
 
-        {% include "header.html" %}
+
     {% load static %}
     <link rel="stylesheet" href="{% static 'style4.css' %}">
     <link rel="stylesheet" href="C:\Users\skywa\Desktop\VSc\css">
@@ -29,61 +29,50 @@
 
         .carousel-control{background : none !important;}
 
+    .foot{
+    display:flex;}
+    #hea{
+    display:flex;}
+
+        #hea a{
+		text-decoration: none;
+		color:white;
+
+		#hea a:hover{ text-decoration:
+				color:black;}
+
+
+
+
   </style>
 </head>
+
 <body style="background-color:black;">
+<br><br><br><br><br><br><br><br>
 <div class="container">
-    <div class="col-lg-3" style="color:white">
-        <a href="index"><img src="{%static '6.jpg' %}" width="150px"></a>
-    </div>
-    <div class="col-lg-5" style="color:white">
-        <table style="margin-top:30px; border-spacing : 10px; font-size : 18px">
-            <tr>
-                <td width="150">고객센터</td>
-                <td width="150">000-0000-0000</td>
-            </tr>
-            <tr>
-                <td>이메일</td>
-                <td>qweqwe@naver.com</td>
-            </tr>
-            <tr>
-                <td>홈페이지 소개</td>
-                <td>제품 소개</td>
-            </tr>
-            <tr>
-                <td>찾아 오시는 길</td>
-                <td> 대표자 :TUT</td>
-            </tr>
-        </table>
-    </div>
-    <div class="col-lg-4" style="color:white">
-        <table style="margin-top:50px; border-spacing:10px;">
-            <tr>
-                <td style="padding:10px"> <img src="{% static '인스타그램1.png' %}" width="50px"></td>
-                <td style="padding:10px"> <img src="{% static '트위터1.png' %}" width="50px"></td>
-                <td style="padding:10px"> <img src="{% static '카카오톡.png' %}" width="50px"></td>
-                <td style="padding:10px"> <img src="{% static '페이스북.png' %}" width="50px"></td>
-            </tr>
-        </table>
-    </div>
+    <hr align="right" style="border: solid 1px white; width: 90%;">
 </div>
-<div style="width:1300px; height:150px;  float:left; margin:0px 300px">
-    <div class="col-lg-5" style="color:white; ">
-        <font size="7" style="word-break:nowrap">
-            There's always <br>us in the game.
-        </font>
-    </div>
-</div>
-<div style="width:1300px; height:150px;  float:left; padding:0px 100px 0px 800px; margin:-100px 0px 0px" id="sg">
-    <div class="col-lg-5" style="color:white; width:800px; height:150px;  ">
-        <font size="3" style="word-break:nowrap">
-            <br>우리는 게임의 각 정보를 수집하고 유저분들이 이용하시기 편할수 있도록
-            사이트를 만들었습니다.<br>앞으로 올라오는 신상게임들,인디게임들,개발자들과의 짧은 만남,순위별 평가와 GOTY를 확인할수 있을겁니다.<br>
-            물론 스트리머들이나 유저,리뷰어들의 리뷰도 감상하며 게임을 느낄수도 있겠죠.<br> 저희는 게임과 엮인 이런저런 정책의 소식도 올릴 예정입니다.<br>
-            앞으로도 여러가지가 추가될 예정이니 많은 관심 부탁드립니다 감사합니다.
-        </font>
-    </div>
+<div class="container" id="hea">
+    <p><a href="#">회사소개</a></p>
+    <p style="padding:0px 0px 0px 20px"><a href="#">제휴문의</a></p>
+    <p style="padding:0px 0px 0px 20px"><a href="#">광고안내</a></p>
+    <p style="padding:0px 0px 0px 20px"><a href="#">이용약관</a></p>
+    <p style="padding:0px 0px 0px 20px"><a href="#">개인정보취급방침</a></p>
+    <p style="padding:0px 0px 0px 20px"><a href="#">독자권익보호</a></p>
+    <p style="padding:0px 0px 0px 20px"><a href="#">고객센터</a></p>
+    <p style="padding:0px 0px 0px 20px"><a href="#">회원정보</a></p>
+    <p style="padding:0px 0px 0px 20px"><a href="#">서비스전체</a></p>
 </div>
 
+<div class="container">
+<p style="color:gray">(주)IOZX | 등록번호: 서울아000000 | 등록일자: 2021.10.30 | 제호: TUT | 발행인: 홍길동 | 편집인: 홍길동<br>
+    청소년보호책임자: 홍길동 | 발행소: 서울 마포구 마포동 마포빌딩 XX-X | 발행일자: 2020.04.22 | 전화번호: 02-1234-1234</p>
+</div>
+
+
+<div style="height:50px; width:1050px; background-color:808080; margin-right:400px" class="container" id="rule">
+    『열린보도원칙』 당 매체는 독자와 취재원 등 뉴스 이용자의 권리 보장을 위해 반론이나 정정보도, 추후보도를 요청할 수 있는 창구를 열어두고 있음을 알려드립니다.<br>
+고충처리인 류종화 02-3142-6846 mecadesk@gamemeca.com
+</div>
 </body>
 </html>

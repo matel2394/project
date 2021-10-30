@@ -2,36 +2,207 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
-      <!-- 합쳐지고 최소화된 최신 CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+<meta charset="UTF-8">
+	<title>Title</title>
 
-<!-- 부가적인 테마 -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	{% load static %}
 
 
 
+	<!--  스타일-->
+	<style>
+        @font-face {
+            font-family: 'EliceDigitalBaeum_Bold';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
 
-
-<!--  스타일-->
-  <style>
-    @font-face {
-    font-family: 'EliceDigitalBaeum_Bold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/EliceDigitalBaeum_Bold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
- *{
+        * {
             font-family: 'EliceDigitalBaeum_Bold';
         }
+
         /* 캐러셀 버튼의 그라데이션 없애기 */
 
-        .carousel-control{background : none !important;}
-  </style>
-  {% load static %}
-</head>
-<body>
+        .carousel-control {
+            background: none !important;
+        }
 
-</body>
-</html>
+        * {
+				margin: 0;
+				padding: 0;
+			}
+			ul li{
+				list-style: none;
+				text-decoration: none;
+				color:black;
+			}
+			#menu a{
+				text-decoration: none;
+				color:black;
+
+			}
+
+		#menu a:hover { text-decoration:none !important;
+				color:black}
+
+			#menu {
+				font:bold 16px "malgun gothic";
+				width:700px;
+				height:20px;
+				background: #ffffff;
+				color:white;
+				line-height: 30px;
+				margin:0 auto;
+				text-align: center;
+			}
+
+			#menu > ul > li {
+				float:left;
+				width:110px;
+				position:relative;
+			}
+			#menu > ul > li > ul {
+				width:130px;
+				display:none;
+				position: absolute;
+				font-size:14px;
+				color:white;
+				background: gray;
+			}
+			#menu > ul > li:hover > ul {
+				display:block;
+				z-index: 999;
+			}
+
+			#menu > ul > li > ul > li:hover {
+		background: white;
+		transition: ease 1s;
+		}
+
+
+		 div.box > .carou{
+
+			height: 300px;
+
+			width: 300px;
+		}
+
+
+
+
+
+		/*  버튼  */
+		input:-ms-input-placeholder {color:#a8a8a8}
+		input::-webkit-input-place {color:#a8a8a8}
+		input::-moz-placeholder {color:#a8a8a8}
+
+
+		.se-area{
+		height: 40px;
+		width:400px;
+		margin:-90px 500px;
+		border: 1px solid #000000;
+		background:#ffffff;}
+
+		.se{
+		font-size:16px;
+		width: 325px;
+		padding: 10px 200px 0px 500px;
+		border: 0px;
+		outline: none;
+		float: left;
+		}
+
+		#buto{
+		width: 50px;
+		height:100%;
+		border: 0px;
+		background: #686868;
+		outline: none;
+		float: right;
+		color:#000000
+		}
+
+
+		.div{
+		display:flex;
+		}
+        </style>
+
+    </head>
+
+<body style="background-color:black;">
+
+<div>
+	<a href="http://127.0.0.1:8000/index#"> <img src="{% static '7.jpg' %}"
+												 style="display: block; margin: 10px  300px 20px 300px" width="150px">
+	</a>
+</div>
+<div class="se-area">
+	<input type="text" id="se" name="se" placeholder="검색어 입력" style="width:348px; height:38px;">
+	<button class="seb" id="buto">검색</button>
+</div>
+<!--상단 메뉴-->
+<div class="container">
+	<ul class="nav navbar-white navbar-right">
+		<li><a href="login" style="margin:0px 0px 0px 900px; padding:0px; color:white" id="id">로그인</a></li>
+		<li><a href="signup" style="margin:0px 0px 0px 900px; padding:0px;   color:white" id="su">회원가입</a></li>
+	</ul>
+</div>
+
+
+<nav class="navbar navbar-default" style="font-color:text-white">
+	<div class="container">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+				aria-expanded="false" aria-controls="navbar">
+			<span class="sr-only"> toggle</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<div id="menu">
+			<ul>
+				<li><a>뉴스</a>
+					<ul>
+						<li><a href="news">전체</a></li>
+						<li><a href="online">온라인</a></li>
+
+					</ul>
+				</li>
+				<li><a>특집</a>
+					<ul>
+						<li><a href="event">이벤트</a></li>
+						<li><a href="game_event">게임 이벤트</a></li>
+					</ul>
+				</li>
+				<li><a>게임정보</a>
+					<ul>
+						<li><a href="gong">공략</a></li>
+						<li><a href="cal">일정</a></li>
+					</ul>
+				</li>
+				<li><a>모바일</a>
+					<ul>
+						<li><a href="mobile">뉴스</a></li>
+						<li><a href="comu">커뮤니티</a></li>
+					</ul>
+				</li>
+				<li><a>커뮤니티</a>
+					<ul>
+						<li><a href="comu">커뮤니티</a></li>
+						<li><a href="vote">이달의 게임 투표</a> </li>
+
+					</ul>
+				</li>
+
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<div class="container">
+	<a href="https://www.allaboutpc.co.kr/Event/EventInfoView.asp?IdxEventInfo=342"><img src="{% static '11.png' %}"
+																						 style="margin: 0px 65px"
+																						 id="banner" width="900"></a>
+</div>
