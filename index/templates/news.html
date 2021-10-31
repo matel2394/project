@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 <meta charset="UTF-8">
-	<title>Title</title>
+	<title>뉴스</title>
 
 	{% include "header.html" %}
 	{% load static %}
@@ -43,12 +43,16 @@
 		flex-wrap:wrap
 		}
 
-		a{
+		.content-left a{
 		text-decoration: none;
-		color:white;
+		color:white;}
 
-		a:hover{ text-decoration:none !important;
-				color:black}
+
+		.content-left a:hover{
+		text-decoration: none;
+		color:white;}
+
+
 
 
 
@@ -91,7 +95,7 @@
 						<div class="cont_thumb_h">
 							<h3><a href="/view.php?gid=1668782" >마인크래프트에 진흙과 개구리가 있는 ‘야생' 업데이트가 온다</a></h3>
 						</div>
-						<div class="desc_thumb_h" style="color:white">국내 기준으로 17일에 온라인으로 진행된 마인크래프트 라이브 2021을 통해 내년에 게임에 추가되는 신규 콘텐츠 다수가 공개됐다.<br>
+						<div class="desc_thumb_h" style="color:white; ">국내 기준으로 17일에 온라인으로 진행된 마인크래프트 라이브 2021을 통해 내년에 게임에 추가되는 신규 콘텐츠 다수가 공개됐다.<br>
 							내년 업데이트 타이틀은 '더 와일드'이며, 늪지대와 지하세계를
 							배경으로 다양한 생물과 관련 아이템이 추가된다.<br>
 							먼저 연말에는 지난 6월에 진행된 ‘동굴과 졀벽’ 업데이트 후속 패치가 진행된다</div>
@@ -129,6 +133,7 @@
 			</div>
 	</div>
 </div>
+
 
 </body>
 {% include "footer.html" %}

@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>main</title>
+	<title>TUT 메인</title>
 
 	{% include "header.html" %}
 	{% load static %}
@@ -83,25 +83,23 @@
 		text-decoration: none;
 		color:white;
 
-		#news a:hover { text-decoration:none !important;
-				color:black}
+		#news a:hover { text-decoration:none;
+				color:black;}
 
 
-
-
-		#news2 a{
+		.news1 a{
 		text-decoration: none;
 		color:white;
-		}
+
+		.news a:hover { text-decoration:none;
+				color:black;}
 
 		#news2{
 		display:flex;
 		}
 
-		#news2 a:hover{
-		 text-decoration:none !important;
-		color:black;
-		}
+
+
 
 		p{
 		padding:0;
@@ -113,7 +111,7 @@
 		}
 
 		a{
-		text-decoration: none;
+		text-decoration: none; !important
 		color:white;}
 
 
@@ -165,9 +163,9 @@
 			</div>
 		</div>
 		<div class="carou-list" id="carou-list" align="right">
-			<a href="#"><img src="{% static '1.png' %}" width="150" height="100" style="margin:20px 0px 0px 30px"></a><br>
-			<a href="#"><img src="{% static '1.png' %}" width="150" height="100" style="margin:20px 0px 0px 30px"></a><br>
-			<a href="#"><img src="{% static '1.png' %}" width="150" height="100" style="margin:20px 0px 0px 30px"></a>
+			<a href="#" class="news1"><img src="{% static '1.png' %}" width="150" height="100" style="margin:20px 0px 0px 30px"></a><br>
+			<a href="#" class="news1"><img src="{% static '1.png' %}" width="150" height="100" style="margin:20px 0px 0px 30px"></a><br>
+			<a href="#" class="news1"><img src="{% static '1.png' %}" width="150" height="100" style="margin:20px 0px 0px 30px"></a>
 			</div>
 
 		<div class="main-ranking" id="ranking" style="padding: 0px 0px 	0px 30px" >
@@ -243,7 +241,7 @@
 	<hr align="right" style="border: solid 1px white; width: 90%;">
 </div>
 
-<div id="news" class="container" align="left">
+<div id="news" class="news; container" align="left">
 	<img src="{% static '1.png' %}" width="100" height="60" style="margin:20px 10px 10px 10px;">
 	<a href="#"><h1 style="padding:10px 0px 0px">철권7 한일전,한국 2 대 0으로 압도적 승리</h1></a>
 
